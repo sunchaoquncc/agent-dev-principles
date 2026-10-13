@@ -42,3 +42,13 @@
 - 模型专属提示差异（GPT vs Claude vs GLM 的写法差异）**零覆盖**——厂商提示指南信源未读（docs/02 已列）。
 - M-008/M-026 均非认可级；prompt 层是五层中证据最薄的一层。
 - Q-001 风险最高层：Anthropic 官方已声明提示格式重要性下降——本层条目复核触发器最敏感。
+
+
+## 规则 26：提示词矛盾审查 🧪 [M-037/M-036]
+
+**做什么**：把系统提示当活文档做卫生管理——上线前+定期扫描矛盾与模糊指令；官方依据（GPT-5 指南，2025-08）：模型"surgical precision"式遵循使矛盾提示"more damaging... as it expends reasoning tokens searching for a way to reconcile the contradictions rather than picking one instruction at random"；早期用户清理核心提示库的矛盾后性能大幅改善。
+
+- 配套手段：逃生口条款（"even if it might not be fully correct"类，允许在明确条件下继续）；按工具分级的确认阈值（支付/删除低阈值、搜索高阈值）；persistence 提示防过早收尾（与 M-033 结构层对策互补）。
+- 最小推理档模型更需要提示脚手架：思路摘要/工具前导语/消歧/规划提示（推理 token 越少，提示承载越多）。
+- 元提示：用模型自查提示词（"what are some minimal edits/additions"模板）。
+- 复现候选：矛盾 vs 修复版提示的推理损耗对照（E 系列可跑）。
