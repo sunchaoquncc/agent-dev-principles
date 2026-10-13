@@ -1,6 +1,6 @@
-# Harness 层细则 v0.1（2026-10-13）
+# Harness 层细则 v0.2（2026-10-13）
 
-对应核心层规则 1—4、13—16。证据见 notes/（M-001/M-003/M-017/M-018/M-019/M-020），条目定义见 graph/overview.md。
+对应核心层规则 1—4、13—17。证据见 notes/（M-001/M-003/M-017/M-018/M-019/M-020），条目定义见 graph/overview.md。
 
 ## 规则 1：复杂度递增 ✅ [M-004]
 
@@ -52,6 +52,14 @@
 
 - 现象：批量同质任务中模型"falls into a rhythm—repeating similar actions"，输出趋同；上下文里的历史轨迹本身就是 few-shot。
 - 对策：在 actions/observations 的**序列化**中引入少量结构化变体（不同序列化模板、措辞、顺序/格式噪声）——注意变体加在轨迹序列化上，不是约束输出模板（红队纠错过的高频误读）。
+
+## 规则 17：Harness 按可替换性分层 🧪 [M-031/M-029]
+
+**做什么**：自建 agent 时把三个组件做成可独立替换的接口——session（append-only 事件日志，`emitEvent` 写/`getSession`/`getEvents` 位置切片读）、harness（调用循环，无状态，`wake(sessionId)` 重启恢复）、sandbox（执行环境，`execute(name, input) → string` 当工具调用、`provision({resources})` 按需建）。
+
+- 依据：Anthropic 生产自述"harnesses encode assumptions about what Claude can't do on its own... can go stale as models improve"——context anxiety 案例（Sonnet 4.5 临近窗口提前收尾→加 resets→Opus 4.5 上行为消失、resets 成 dead weight）说明 harness 补丁有半衰期，接口稳定才能低成本换代。
+- 工程收益（同源）：pet→cattle（容器/harness 皆可换）；TTFT p50 ~-60%/p95 -90%（容器仅在需要时 provision）；调试能力（事件日志区分 harness bug/网络/容器死亡）。
+- 单源候选（M-029）；OS 类比（process/file）是设计信条非定律，反证与边界见 M-029 反证节。
 
 ## 本层缺口
 
