@@ -41,7 +41,7 @@
 **做什么**：失败尝试（含报错、stack trace）不删——错误恢复是最 agentic 的能力之一（三源同向说它是核心指标，K-006；"保留"处方是 Manus 单源）；压缩必须可恢复：丢网页全文保 URL、删中间文件保路径。
 
 - 与规则 8 的调和：判据是"高信号"不是"少"——错误轨迹是反馈信号，冗余才是要删的。
-- 过激警告：ECE 自警"overly aggressive compaction can result in the loss of subtle but critical context"，调参先 recall 后 precision（M-002）。
+- 过激警告：ECE 自警"overly aggressive compaction can result in the loss of subtle but critical context"，调参先 recall 后 precision（M-002）。注（2026-12 代际）：compaction 已成 OpenAI 平台端点（K-013，/responses/compact，里程碑式触发、恢复时提示保持不变）——平台内置化进行中，触发器命中时评估改用官方机制。
 - 长时程三板斧选型（M-010，候选）：compaction=对话流多轮；结构化笔记=有里程碑的迭代；子 agent 隔离=并行探索研究型（只读检索子 agent 是三方公认的第一个适用域）。
 
 ## 本层缺口
