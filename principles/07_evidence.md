@@ -1,8 +1,8 @@
-# 证据与适用性登记 v0.9
+# 证据与适用性登记 v0.10
 
 > 2026-10-13状态纠正：以下登记是草案依据线索，并非12条均由来源直接推出。核心和细则中的方法步骤、默认工件及组织结构包含助手工程提案。原文存在、建议合理与效果已验证必须分开；当前暂停仅凭结构讨论扩写原则，后续逐条依据采集结果审定。
 
-本附录供维护者读取。2026-10-13为文献审查日期；本项目尚无目标业务验证。D规则是工程工作要求，不代表某种实现已被跨模型证明有效。研究编号不需要业务开发者查阅私有知识库才能理解正文。
+本附录供维护者读取。首轮文献审查为2026-10-13，本轮选定来源复核为2026-10-14；本项目尚无目标业务验证。D规则是工程工作要求，不代表某种实现已被跨模型证明有效。研究编号不需要业务开发者查阅私有知识库才能理解正文。
 
 ## 逐条登记
 
@@ -71,3 +71,57 @@ D03的实际纠正记录还参考第十批Eugene工作法M065；D04相关细则�
 - M066：[Snyk客服案例](https://www.langchain.com/blog/how-snyk-turned-an-internal-support-agent-into-a-customer-feature)，2026-10-08；统计自4月上线起，无工单不等于真实解决。
 - M067：[Harness模型路由](https://www.langchain.com/blog/how-to-build-a-model-router-in-the-harness)，2026-10-01；厂商试验，未检出质量差异不证明等效。
 - M068：[按需Skills与工具](https://www.langchain.com/blog/revamping-skills-in-deep-agents)，2026-10-07；框架及模型缓存条件限制，未运行SDK。
+
+
+## 第十二批逐项复核（2026-10-14）
+
+仍为12条候选，业务效果未验证。D04只补权威来源/版本，D09补方向与执行两种失败；其他核心保留，细则与案例按下表补充。没有用一期访谈或一次静态审查替整套规则背书。
+
+| 条目/细则 | 本轮依据与处理 | 性质及限制 |
+|---|---|---|
+| D01/D02 | Thoughtworks产品/执行反馈、E248业务部署补案例；核心不改 | 实践者解释，未证通用结构胜出 |
+| D03/提示01 | Pocock固定Skill入口、Eugene全文、AWS反思模板 | 提取条件与反例，自动追加不是自动验收 |
+| D04/上下文02 | Thoughtworks现行组织知识、CLM说明、Datawhale反例 | 当前事实与完整请求检查为我方迁移；Datawhale日期未知不作新据 |
+| D05/D06/编排03 | Codex核心/UI/不变量；E248既有系统工具 | 核心不改，保留条件性恢复；不强建抽象层 |
+| D07/安全05 | CLM trace与缓存残留、Datawhale执行片段 | 静态边界，非漏洞复现；按实际工具风险检查 |
+| D08（保持） | Pocock不同入口、Dialkit可调原型 | 核心不改，原型不等于生产，不强制盘问 |
+| D09/D10/评测04 | Eugene轻模式/方向偏离、Thoughtworks反馈、AQuA及Harvey代码 | 目标与实现区分，评审通过不等于真实成功 |
+| D11（保持） | M046公开CSV/统计审计、CLM分预算、当前路由与旧试验区别 | 不能复算时保留未知；当前源码不替旧效果背书 |
+| D12/检查单08 | Dialkit选择落地、E248模型升级再验证 | 核心不改，按实际风险验证版本变化 |
+
+可访问工件：
+
+- [Pocock Skills固定版](https://github.com/mattpocock/skills/tree/49dd158d1076134a641b33efb035946536778336)，版本提交2026-10-09；与九月访谈同作者，不计独立重复。
+- [Dialkit固定版](https://github.com/joshpuckett/dialkit/tree/0301abdf0b84fc3d60a4c4fa3a99bfb2044959e3)，提交09-25；React接口/测试静态检查，非运行验证。
+- [Thoughtworks访谈](https://www.thoughtworks.com/en-in/insights/podcasts/technology-podcasts/rethinking-the-software-development-process-for-an-era-of-specs-and-ai-agents)，09-17，嘉宾推广Praxa；全文公开稿，非业务对照。
+- [AWS优化器](https://github.com/strands-labs/harness-optimizer/tree/da3dd085e987a2105382f9a883b145b26b06608a)，09-21提交；[CLM](https://github.com/facebookresearch/context-language-models/tree/648a48b2b2305624b58204288367026823911828)，10-11提交；后者本轮五份README，不冒称完整源码已审。
+- [AQuA](https://github.com/google/adk-recipes/tree/9252494a7aaafca8fe4d81a04f15392345a5779b)，10-13提交，仅两节点；[路由](https://github.com/langchain-ai/open-swe/tree/d1ada86e352cf406b1c07dbefd5275c53a407604)，10-13提交，仅middleware。
+- [Harvey LAB](https://github.com/harveyai/harvey-labs/tree/a15650fe74bb20b86f160aaabdad75b87a91b6e8)，10-08提交；7工件含一个635项任务，不含配套原始法律材料；不是9月RLM实验版本。
+- [上下文文件统计](https://github.com/codeprakhar25/context-files-coding-agents/tree/cfa048e5a83284ac1ba768c0928ec03e6f381865)，08-31提交，实验05—06；291行CSV揭示排除字段及判分口径未对齐。
+- [Datawhale](https://github.com/datawhalechina/hello-agents/tree/36f583c233ea5cee4537ef93455702b55053af18)，章节日期未知，仅英文第九章静态反例；不能充当六个月新据。
+
+仓库提交日仅标识观察版本，不是每个文件或方法的发表日期。上述源码和说明来自维护者，同一文章及仓库合并计源。统计复算只验证公开数据的内部关系，不是模型效果复现。
+
+本轮全文复读及新增业务案例：
+
+- [Codex参与者访谈](https://newsletter.pragmaticengineer.com/p/building-codex-with-tibo-sottiaux)，2026-09-09；发布方文字稿全文，未核听，模型/训练合作经验不能等同业务团队能力。
+- [Airbnb访谈整理](https://www.latent.space/p/airbnb)，2026-10-02；全文，匿名/汇总成效仍自报。
+- [Eugene工作法](https://eugeneyan.com/writing/working-with-ai/)，2026-05-03；全文，个人经验，2026-11-03需新据；轻模式及过拟合反例同时保留。
+- [硅谷101 E248](https://sv101.fireside.fm/261)，2026-08-11；约64分钟机器稿全文，未核听；供应商业务部署自述，升级需业务再验证只作案例，收入及隐私强断言不采。
+
+- [硅谷101 E249](https://sv101.fireside.fm/262)，2026-08-20发布；约87分钟机器稿全文，未核听；投资者/深度用户的经验，承认成本前后工作量混杂。仅给04/06补比较条件，不将自主决策信念、产品评价或事故根因当验证事实。
+
+- [硅谷101 E253](https://sv101.fireside.fm/267)，2026-09-28；58分钟机器稿全文，末尾空块/未核听保留；专家数据伪造与多合法输出为项目参与者经验，不是独立量化证明。04增加标答复核，未扩核心。
+
+- [硅谷101 E255](https://sv101.fireside.fm/269)，2026-10-09；46分钟机器稿全文，未核听。商业权限、反馈周期和系统比较为产品方经验；自动完成率及成本无独立复现。
+- [CommerceAgentBench固定版](https://github.com/Accio-org/CommerceAgentBench/tree/d38bd1711aa3926653452458a1be02c1efd12930)，08-29提交；README及13份选定任务/评分工件静态全文审查，原始邮件/PDF未取齐。支持04/06检查判据覆盖的案例，不能证明榜单误判频率；与E255同源。逐任务原始运行数据缺失，效果等级不升。
+
+- [晚点178](https://podcast.latepost.com/178)，2026年6月底录制、08-07发布；89分钟机器稿全文，未核听。研究参与者兼创业方自述，评价器权限/搜索预算未完整披露；仅补06科研与业务自改的边界案例，不升级效果，不增核心规则。发布方附录的防作弊解释不当嘉宾已验证的机制。
+
+本轮补全文审查的既有来源（不重复计新增）：
+
+- [RLM参与者访谈](https://www.latent.space/p/rlm)，2026-10-02；101分钟发布方文字稿全文，未核听。压缩与外部回查并用、过多输出无人消费均为参与者经验，Harvey例子不是额外独立验证。
+- [Context Language Models论文v1](https://arxiv.org/html/2609.37725v1)，2026-09-29；全文抽取正文及附录，图像未全面核验，未跑模型。ContextBench禁预处理是实验条件；论文预算、后训练与当前仓库默认分别记录。
+- [记忆与压缩教程](https://developers.openai.com/cookbook/examples/agents_sdk/building_reliable_agents_memory_compaction)，2026-05-01；全文及可见代码静态读取，示例gpt-5.5/压缩gpt-5.4-mini，SDK未固定。未见最终组合运行、恢复及下一次消费的完整实演；11-01前需近期新据。
+- [Progressive Crystallization论文v1](https://arxiv.org/html/2607.07052v1)，2026-07-08；全文，未重跑。固件漂移触发解析回退不代表静默误解析也能被发现，局部token节省不等于总成本归零。
+
