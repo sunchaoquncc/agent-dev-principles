@@ -2,7 +2,7 @@
   "version": "v0.13",
   "files": {
     "AGENTS.md": "93d94376f1ff7ac745260cca888fbe3d7530ad6eb3a5e2bba0a79fe305d5005b",
-    "README.md": "baf1036b13bbe1461b4591f1923d703bb3d5d6d512b2a36b1940eedb1e944d32",
+    "README.md": "ddf25551c1a1287286c7bda767d7a2af163cdc1887d61ccd8aada0da8ff1d403",
     "principles/01_prompt.md": "25637c82b2bb0ca41e859818941bee58a6b7c5e19765138d7185c58f9d15e44f",
     "principles/02_context.md": "60ecc3a951dc6c6b0b519b1e89a90ea1ad60e0d03fd5bdb3e5426d042a455769",
     "principles/03_harness.md": "473260d0f401241a1b45e5b8d0a6ffa825838a17c024bd72c40a7e4df27a97bf",
@@ -13,6 +13,8 @@
     "principles/08_business_delivery_checklist.md": "053e1f00fc0093b1f4c74d4707ef22fb29f973e09b0a82e0d8a9de67c8374744",
     "trial/FEEDBACK_TEMPLATE.md": "4c2b33a9a90b46188cdfe53fc59e0f585360f56f4f96a097227cb1e1fc73a368",
     "trial/README.md": "5049828ab7f254ff222633e1e67fb642a0672f2f1e9c381014d6cc7dda4f3efc",
-    "trial/TASK_PROMPT.md": "604d7fac1f222f6f3a87178884958f431c4015afe7f4de5d5dbd7291a728ccdb"
+    "trial/TASK_PROMPT.md": "604d7fac1f222f6f3a87178884958f431c4015afe7f4de5d5dbd7291a728ccdb",
+    "trial/feedback/2026-10-16-project-e-context-recovery.md": "bb0f5c813be7c5fb23a6fc8c5429b98315b4e2fab12d94cfb6bcf6b64d23f6b7",
+    "trial/feedback/2026-10-16-project-e-proposed-additions.md": "78c9fbf5e9b45a9edbe0c23ef5919c15a7676e2646836c380efd65590cf0af9c"
   }
 }

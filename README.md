@@ -10,6 +10,13 @@ v0.13 · 2026-10-14。帮助开发助手与工程团队决定如何分配模型�
 
 先看[跨项目试用说明](trial/README.md)，把[任务说明](trial/TASK_PROMPT.md)交给开发助手，再带回[反馈](trial/FEEDBACK_TEMPLATE.md)。默认先离线，整体审查后选少量改动。不要覆盖业务项目AGENTS。发布完整性见[文件清单](RELEASE_MANIFEST.json)。
 
+### 已收录的实践反馈
+
+- [项目E：上下文与错误恢复的前后试用](trial/feedback/2026-10-16-project-e-context-recovery.md)：局部工程收益、持平结果与未验证的模型行为，2026-10-16。
+- [项目E：六条候选补充知识](trial/feedback/2026-10-16-project-e-proposed-additions.md)：结合开发标准和历史经验提出的条件性建议，尚未并入核心原则。
+
+反馈提供项目内证据，不代表跨项目有效性或知识库独立因果收益。
+
 ## 从开发任务开始
 
 - [核心12条](AGENTS.md)：默认设计要求、条件机制、比较与交付。
