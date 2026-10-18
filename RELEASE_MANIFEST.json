@@ -1,24 +1,221 @@
 {
   "hash_normalization": "UTF-8 text with LF line endings",
-  "version": "v0.18",
+  "version": "v0.19",
   "files": {
-    "AGENTS.md": "613f6acc5a5e02acf0b3928f69841b0f76ff4055cc8e53a9508615c1c780e99b",
-    "README.md": "320edba85c3cf692ef6426879b0b18090fffede7ad1df1263d7d092407fb0d60",
+    "AGENTS.md": "316a8146f565a08c9890a378ec529addd2c4f787d3e402aef8fe0ddfde040879",
+    "README.md": "2fe46830be70479f4bdea091ace3262478ce1dd7b16291c37973bc3e93fc9cf1",
     "principles/01_prompt.md": "5726079d4b3aabee696808bcac23a647c23623a54566f701260642e54e3504f2",
     "principles/02_context.md": "461a59e4a90e37ce4a84475d76d30d41409a6c52ccf04bfe840b31caa5c267fb",
-    "principles/03_harness.md": "00480b86ad3cb60b00cbeef1ae294fccd53787707ad1f8485bd35d964936bfd1",
-    "principles/04_evaluation.md": "c89ab58f9160130348b19582f1878ddaf7340fb37d3dcc7b51ebe58565967bb0",
+    "principles/03_harness.md": "f1defc28e6a5eef2857d10e377f51fb44f2aa268d30a102da98d74d06a4b7c89",
+    "principles/04_evaluation.md": "83e2a85623072251afb750124002da7a9ad76bf63747fe31f71214cfc1123186",
     "principles/05_security.md": "904f3285adc68d39b9b686e0710c98aca6cd3b41448a7c8fd4c2bac723b4c686",
-    "principles/06_cases.md": "1ad35a9c0fe188765a62adb4c1f55b503760419d1a0fc69c9327c9f29fef81af",
-    "principles/07_evidence.md": "7aff1640c54183400bcd787e3c5fd07f82fd328efd8b9adbc6aaa5477d013558",
+    "principles/06_cases.md": "ef123a41b8d1a525eba9ef654c405dd95fc28efbd9d30c3f8c3eb336a2851714",
+    "principles/07_evidence.md": "15bc0f74a08ac921553374343f3060301f915ac94a5cbcea13451b98af3fa3a2",
     "principles/08_business_delivery_checklist.md": "1a26d6a476e42c7c78825a7d212c0a5d3bad41997671d2e1e5263333543dc93a",
     "trial/FEEDBACK_TEMPLATE.md": "089dd34474a2fe897121634522368c182b9420a6fe7183ae022e533f28772c1f",
     "trial/README.md": "f8341730b67166a7eeacf709879ee26238a13c54b6209ff191ade7c53db57269",
     "trial/TASK_PROMPT.md": "7bf3ac98d3b49938d557e88fc0634278a589739df0f485d781cf67483c32281c",
     "trial/feedback/2026-10-16-project-e-context-recovery.md": "bb0f5c813be7c5fb23a6fc8c5429b98315b4e2fab12d94cfb6bcf6b64d23f6b7",
     "trial/feedback/2026-10-16-project-e-proposed-additions.md": "78c9fbf5e9b45a9edbe0c23ef5919c15a7676e2646836c380efd65590cf0af9c",
+    "trial/feedback/2026-10-18-project-e-correction-case/00-published-report/2026-10-16-project-e-context-recovery.md": "6a4a48571ae990c16b7c39c6de0115ad00262d16f8f3eefda199ef816a498b19",
+    "trial/feedback/2026-10-18-project-e-correction-case/00-published-report/2026-10-16-project-e-proposed-additions.md": "53744158c527897c45fc412c7a274179dfcdac509de78a92dda4324c53f97f02",
+    "trial/feedback/2026-10-18-project-e-correction-case/00-published-report/2026-10-18-project-e-integration-suggestions.md": "2a217255100f1b59bb82f2018222c783bb9318f8228e73cf4f4b06a215a5fb92",
     "trial/feedback/2026-10-18-project-e-decision-changes-and-limits.md": "cccc97b109140eebe29d30cba12bd8ab1cb2d73852100c75c40250671c00cd6c",
     "trial/feedback/2026-10-18-project-e-evidence.json": "4e1a3e79288b0db9094418951cff4d55641c416148b212948fee907776c341e7",
     "trial/feedback/2026-10-18-project-e-integration-suggestions.md": "0d94d88ad0e673f6ffcbe81c2f446e3e453729fe6f469a9a74e3aeb1fdd46c42"
+  },
+  "preserved_attachments": {
+    "source_commit": "ab33042d9d8920d7a546fe37f998fbf5ded706ea",
+    "hash_normalization": "Exact Git blob bytes; includes binary files",
+    "files": {
+      "trial/feedback/2026-10-18-project-e-correction-case/00-published-report/2026-10-18-project-e-decision-changes-and-limits.md": {
+        "git_blob": "7902043ede5293e60d11a10f30a11adc44be7396",
+        "sha256": "cccc97b109140eebe29d30cba12bd8ab1cb2d73852100c75c40250671c00cd6c"
+      },
+      "trial/feedback/2026-10-18-project-e-correction-case/00-published-report/2026-10-18-project-e-evidence.json": {
+        "git_blob": "0b7166257d66be59372a8450ff565331974cb364",
+        "sha256": "4e1a3e79288b0db9094418951cff4d55641c416148b212948fee907776c341e7"
+      },
+      "trial/feedback/2026-10-18-project-e-correction-case/00-published-report/provenance.json": {
+        "git_blob": "9f3d8942ff3a37caad5c915c17fcb06360225950",
+        "sha256": "92f750cc3b1c0bff3d3781acbc9031dae2ad8db6517f7e28ad6d6ed7a3c34387"
+      },
+      "trial/feedback/2026-10-18-project-e-correction-case/01-original-trace/48-targets-and-one-preserve.json": {
+        "git_blob": "5a8228da7d77072fada9ceb76d1df821bd80ccdd",
+        "sha256": "b3de160501aed9e3db25e35f26e534e31135124d5a4edc3fbda74f7393801d18"
+      },
+      "trial/feedback/2026-10-18-project-e-correction-case/01-original-trace/function-events.json": {
+        "git_blob": "4eea15641a4e864e0c8b96a034298b52f6568129",
+        "sha256": "b33d33e0dfc87bab964eeb0440d3bd57f7db72f4ec48d0f5927d9eb005305d71"
+      },
+      "trial/feedback/2026-10-18-project-e-correction-case/01-original-trace/two-bodies-and-requests.json": {
+        "git_blob": "7e6a3688aa77429b61452796b50ac2becb23f0a2",
+        "sha256": "60c0cae839f5d28824c828be6ce1b7e254067ca6a7c1a1097642c7ff411d85d0"
+      },
+      "trial/feedback/2026-10-18-project-e-correction-case/02-offline-replay/BASELINE.json": {
+        "git_blob": "c08fdc076d96e2be72ef4e4fe2e2820e67f745a2",
+        "sha256": "f28e8f1955b5406678e37445fcb7d1f503c8d02151bcd51ae32b444da8c402ea"
+      },
+      "trial/feedback/2026-10-18-project-e-correction-case/02-offline-replay/ORIGINAL-CORRECTION-BASELINE.json": {
+        "git_blob": "4d4be4148f4bbd8b114e629810cd8e72eedfa1a0",
+        "sha256": "55ca8dd844299afc5628a79fa8e060e7b9bdaf15f4b6dc9d4ad61cbab0cfb287"
+      },
+      "trial/feedback/2026-10-18-project-e-correction-case/02-offline-replay/ORIGINAL-CORRECTION-REPLAY.json": {
+        "git_blob": "55e6954d2b2adfcbcc8a0342b9a0c6314522f2fb",
+        "sha256": "113d7fa968e28614149fc47274da7ad838e6ec8fb12cc5423cd1562c6378122d"
+      },
+      "trial/feedback/2026-10-18-project-e-correction-case/02-offline-replay/reconstructed-input-notes.json": {
+        "git_blob": "e1e53f5f205fa010b89c2d3f20865e3c81429bb5",
+        "sha256": "43209db00bb503ba1f2aa8df93558142ca9163fa593f319c13462cc86a08e15e"
+      },
+      "trial/feedback/2026-10-18-project-e-correction-case/02-offline-replay/replay_original_correction.py": {
+        "git_blob": "84e30e49179a6dd4fcab25ddddd53db051802cef",
+        "sha256": "ca7ca084a9dc79454117745e1d914d01dc24eb91488e86a9f038bb0092c59603"
+      },
+      "trial/feedback/2026-10-18-project-e-correction-case/03-implementation-and-tests/A-to-R1.patch": {
+        "git_blob": "37fa2a248f5ae76f7223d04f474809be31cb4fcd",
+        "sha256": "b93b4d5fb8b4c7c65a895e48f68d26a863c33de81df982c114b189802ac5e1ee"
+      },
+      "trial/feedback/2026-10-18-project-e-correction-case/03-implementation-and-tests/R1-to-R1.1-final.patch": {
+        "git_blob": "b8615d311784cd0b386c3bd49ca0f02b8a9660c9",
+        "sha256": "27d42046c374d9a24928c3260d0067a3964edca21ea572fc497e87ea5020a6a0"
+      },
+      "trial/feedback/2026-10-18-project-e-correction-case/03-implementation-and-tests/historical-commands-and-stdout.json": {
+        "git_blob": "d3e75a7322ae68f339bacc7b6a3e922aa51e6ea1",
+        "sha256": "4788490196da1b84105633b1bf8689b750acbf1d168396f22d4a3ad93f916329"
+      },
+      "trial/feedback/2026-10-18-project-e-correction-case/03-implementation-and-tests/plan-invalidation-source.txt": {
+        "git_blob": "d5aa77fc205c7328bbfd39bcab37927cb19ff901",
+        "sha256": "1c1c3916c365671e25b8d505085368af53a661ec2dde821519dd2bf8b6983b5c"
+      },
+      "trial/feedback/2026-10-18-project-e-correction-case/03-implementation-and-tests/rewrite_review_revision.R1.1-final.py": {
+        "git_blob": "2e04f72f093d5bc3007ea37b6ce8bb2f2925c282",
+        "sha256": "cf661bf89523bae5031abdb94c94fed8d2b11924e6748f1bb2727be29a3300aa"
+      },
+      "trial/feedback/2026-10-18-project-e-correction-case/03-implementation-and-tests/synthetic-fixture-inputs.txt": {
+        "git_blob": "0f3aae96c803a54e59465bf73493bf07b540a72b",
+        "sha256": "aa4c50c7c58f7500ff69afeef5384debb6efcfde006df139b2a91d3667b115e5"
+      },
+      "trial/feedback/2026-10-18-project-e-correction-case/03-implementation-and-tests/test_prewrite_review_revision.R1.1-final.py": {
+        "git_blob": "2f2bf05baa9059766522c69d99584649a07d40cb",
+        "sha256": "c6b999e80162f55078846f9b1084141468c12b6b8466cc44dc200859ca98addc"
+      },
+      "trial/feedback/2026-10-18-project-e-correction-case/03-implementation-and-tests/version-boundaries.json": {
+        "git_blob": "61c65813e62ac3280b403e7c6290fd2a9dd821c3",
+        "sha256": "64dc795923878443a791c4a2266cacb45b8cf2057718151c33fd27b56518c674"
+      },
+      "trial/feedback/2026-10-18-project-e-correction-case/04-real-whole-task/A-request-journal-excerpt.json": {
+        "git_blob": "797f8767c35ea0a760198b8e7076aa93c2fd0201",
+        "sha256": "cd8f512abefef7be1ba0593e8009653d33e2506920ccd6195ab79a5b0969e99a"
+      },
+      "trial/feedback/2026-10-18-project-e-correction-case/04-real-whole-task/A-selected-bodies.json": {
+        "git_blob": "25213bc0836d4638268de128151e20b12aafd811",
+        "sha256": "53184534b5d52a70333c500b5d8aae75eebcb03f5f8c97004931951f214754d1"
+      },
+      "trial/feedback/2026-10-18-project-e-correction-case/04-real-whole-task/A-status-and-readbacks.json": {
+        "git_blob": "b6950e61413886734c9c6a8501f18194b371ed3f",
+        "sha256": "563564ad505b66fab6ef81dff6353d7a262061ae76a9559d1aa2ce16ca8751dd"
+      },
+      "trial/feedback/2026-10-18-project-e-correction-case/04-real-whole-task/A/saved-html/6ad47b881ea55262e8f757ec-V20261018_1792310378.html": {
+        "git_blob": "bfb3d63c36c5cd2bcf9e7395e2e7b5c5c2892393",
+        "sha256": "5558e13f74b8908d59617c6aae981daabd057557f88033aaf82d681530c14219"
+      },
+      "trial/feedback/2026-10-18-project-e-correction-case/04-real-whole-task/A/saved-html/6ad47b881ea55262e8f758e3-V20261018_1792310639.html": {
+        "git_blob": "53ab7fbbaebd4396f97c3d36d3cc7876eb380c51",
+        "sha256": "1425374576cf208928cb422cb9bdbf7f67dc008248a98219729c6c6c550b27d3"
+      },
+      "trial/feedback/2026-10-18-project-e-correction-case/04-real-whole-task/A/saved-html/6ad47b881ea55262e8f758e4-V20261018_1792310645.html": {
+        "git_blob": "8412d5f11be80f434d87b1871015631169b62b6b",
+        "sha256": "aaf7911fe7e02eeba17e4f1b9adf9a3cd077543618f35f5a2300a50f425b2759"
+      },
+      "trial/feedback/2026-10-18-project-e-correction-case/04-real-whole-task/A/saved-html/6ad47b881ea55262e8f758f3-V20261018_1792310677.html": {
+        "git_blob": "773b1303bf028dc1b4b44df6271320bffd73c47f",
+        "sha256": "ee62cc7a1f37a7f0865954263dc1e8086646a5791ebefa894d03d60326d794b6"
+      },
+      "trial/feedback/2026-10-18-project-e-correction-case/04-real-whole-task/COMPARISON.historical.json": {
+        "git_blob": "5002b7db7166d09622008099f8d3d0a9aeaf48e0",
+        "sha256": "ba5c4b5e019a57dfbe579f9d57cd43a74851d5b055ba20b267d68995e705bc25"
+      },
+      "trial/feedback/2026-10-18-project-e-correction-case/04-real-whole-task/D-request-journal-excerpt.json": {
+        "git_blob": "1e286341e4b847234a4e1a2402e189d9ce56962a",
+        "sha256": "e2cf0f3efd8cb602137959da03b2d43cc2b00c887fde501982dc8e17f313958f"
+      },
+      "trial/feedback/2026-10-18-project-e-correction-case/04-real-whole-task/D-selected-bodies.json": {
+        "git_blob": "ca47a1e5ac604bfa4ebd109e253c07c40194ccff",
+        "sha256": "9beb82019b053c577b8c8d081bd0a217ab6b1075bc0e4909f61ccf1d96b42ba1"
+      },
+      "trial/feedback/2026-10-18-project-e-correction-case/04-real-whole-task/D-status-and-readbacks.json": {
+        "git_blob": "2dd578880d2e4e51ba1f2fb560059fac71746195",
+        "sha256": "41edc426c2e5e79ffa55f29e9d60586a7e260a15bf5109b87da37ea3ad409b6f"
+      },
+      "trial/feedback/2026-10-18-project-e-correction-case/04-real-whole-task/D/saved-html/6ad455112648c2c609d3ddd1-V20261018_1792300527.html": {
+        "git_blob": "bbcc1e4664cb0cbb3dce7099a21af7fcc17f2f64",
+        "sha256": "6eae098007fc4c0d8b0dfec1297077de759a0c0ee775b30a0c1f59dcd1d349f8"
+      },
+      "trial/feedback/2026-10-18-project-e-correction-case/04-real-whole-task/D/saved-html/6ad455112648c2c609d3dec8-V20261018_1792300701.html": {
+        "git_blob": "a178abe540467842e21d4bb094ec6247988f88ec",
+        "sha256": "ff54771174e7259a12b30db6bfa405d1d60fd8bac7f6fd6fc6afb5c99c186969"
+      },
+      "trial/feedback/2026-10-18-project-e-correction-case/04-real-whole-task/D/saved-html/6ad455112648c2c609d3dec9-V20261018_1792300703.html": {
+        "git_blob": "29591f0242a47e85106562e4b93b79a1b0968b29",
+        "sha256": "8af921f26638d34ac41e46d78a57de45aa52e0ab066e916e304a65214d31fc50"
+      },
+      "trial/feedback/2026-10-18-project-e-correction-case/04-real-whole-task/D/saved-html/6ad455112648c2c609d3ded8-V20261018_1792300728.html": {
+        "git_blob": "68e84d126bcd09fe2b36032f5f22f0801ce9c6a0",
+        "sha256": "9cd5dd523b1bbff2c2e42ebf12226b38a298a2e5cbf9643f701be7b963fea3d7"
+      },
+      "trial/feedback/2026-10-18-project-e-correction-case/04-real-whole-task/R1-correction-still-rejected.json": {
+        "git_blob": "83450bc4a88e9596f415b8290b8923ede6e3a8f2",
+        "sha256": "4922b07fe4e67ffe26c8d7d1c35868ae2f3c390115211ded49732aa1b2c86c65"
+      },
+      "trial/feedback/2026-10-18-project-e-correction-case/04-real-whole-task/R1-extra-confirmation.json": {
+        "git_blob": "4394ffb9cea30d1007f1181d60ad87ca5c61f4a5",
+        "sha256": "bb2a111cddf306fe65bbb2f05582067052f98b413d07108c301b725278243bf0"
+      },
+      "trial/feedback/2026-10-18-project-e-correction-case/04-real-whole-task/R1-request-journal-excerpt.json": {
+        "git_blob": "5fc2e7eee5950b6fd3b5ba058b6115fec196806c",
+        "sha256": "0acebe790dcc2c4ea888c92dc047b22fc5d3bcfee6f72e10d2d0ef57ee23ced5"
+      },
+      "trial/feedback/2026-10-18-project-e-correction-case/04-real-whole-task/R1-selected-bodies.json": {
+        "git_blob": "0dc38ad78e89e92ebc0ec68a6ae984282ce13c7b",
+        "sha256": "5536490dc2f5527b06f20868f72a1456a4a7b7f9f7f265ee7a0038a3545c7f4a"
+      },
+      "trial/feedback/2026-10-18-project-e-correction-case/04-real-whole-task/R1-status-and-readbacks.json": {
+        "git_blob": "f7d223e6f18492feece5900a37d63fdec291540f",
+        "sha256": "3da42382b19b6650d06456aaec999564e5ae9fe393853f16af7d5260b81183b2"
+      },
+      "trial/feedback/2026-10-18-project-e-correction-case/04-real-whole-task/R1/saved-html/6ad47e39fc78ba766c588c38-V20261018_1792311452.html": {
+        "git_blob": "2a4c3afa02ce924c8fdb27f38fa1282bb6c2e533",
+        "sha256": "e5209cddf34ff91700193e222578431af3667f4ef99d0610de7858759a862b24"
+      },
+      "trial/feedback/2026-10-18-project-e-correction-case/04-real-whole-task/R1/saved-html/6ad47e39fc78ba766c588d2f-V20261018_1792311585.html": {
+        "git_blob": "e679cf1d37109fa2a67c8647de5bf0af17078e03",
+        "sha256": "adc4d8876a98b14c3a2fdc74bd9bc09a0a1c913a94c1f0e41352e993560e4555"
+      },
+      "trial/feedback/2026-10-18-project-e-correction-case/04-real-whole-task/R1/saved-html/6ad47e39fc78ba766c588d30-V20261018_1792311590.html": {
+        "git_blob": "8412d5f11be80f434d87b1871015631169b62b6b",
+        "sha256": "aaf7911fe7e02eeba17e4f1b9adf9a3cd077543618f35f5a2300a50f425b2759"
+      },
+      "trial/feedback/2026-10-18-project-e-correction-case/04-real-whole-task/R1/saved-html/6ad47e39fc78ba766c588d3f-V20261018_1792311614.html": {
+        "git_blob": "9b1ffe4c95f5c25af97d051e21208d6c418b3322",
+        "sha256": "36ff2b712ccde2bac3507fa806a145a895df794d2cca4104c457a9bade0ed339"
+      },
+      "trial/feedback/2026-10-18-project-e-correction-case/04-real-whole-task/RESULT.historical.md": {
+        "git_blob": "181cad14ad0dbf7a3f0c65e3fe46d2ddaa0a8c6f",
+        "sha256": "6c4721a169a669536b20ee1999c828623420384a2388708a3aa689ea730e8cba"
+      },
+      "trial/feedback/2026-10-18-project-e-correction-case/05-static-audit.json": {
+        "git_blob": "c4b77cf880e8d74ee8e247418ed68ed6947aeba4",
+        "sha256": "26edccd3ed85ac0ef23adffb919934b0ebc31168f411ed94563d3db164bd0f4c"
+      },
+      "trial/feedback/2026-10-18-project-e-correction-case/project-e-correction-case.md": {
+        "git_blob": "4e16d448836ee469bd0e4f9d83c1e5fa3f02da06",
+        "sha256": "ecee00e52ecd3cb921078eb6c2eff52b7ae5753780861b0982a61a256413a3bc"
+      },
+      "trial/feedback/2026-10-18-project-e-correction-case/project-e-correction-case.zip": {
+        "git_blob": "619118a179d4c4f10d6826683c0f3d7cb6413c58",
+        "sha256": "240bda5c3822ccdd038dc976a40310127282e5af188b645c7977a0c0836e2ab5"
+      }
+    }
   }
 }
