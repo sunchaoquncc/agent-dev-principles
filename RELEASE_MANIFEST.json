@@ -1,20 +1,24 @@
 {
   "version": "v0.13",
   "files": {
-    "AGENTS.md": "93d94376f1ff7ac745260cca888fbe3d7530ad6eb3a5e2bba0a79fe305d5005b",
-    "README.md": "ddf25551c1a1287286c7bda767d7a2af163cdc1887d61ccd8aada0da8ff1d403",
-    "principles/01_prompt.md": "25637c82b2bb0ca41e859818941bee58a6b7c5e19765138d7185c58f9d15e44f",
-    "principles/02_context.md": "60ecc3a951dc6c6b0b519b1e89a90ea1ad60e0d03fd5bdb3e5426d042a455769",
-    "principles/03_harness.md": "473260d0f401241a1b45e5b8d0a6ffa825838a17c024bd72c40a7e4df27a97bf",
-    "principles/04_evaluation.md": "f1ca26d176f1b4eabba3fd7151b636dfd786fd882d0ab78003bc7f73f3c08560",
-    "principles/05_security.md": "ddfd650656d03838a1f8cdddf65ede19fe44eadf8d2a04eb4771efaf32cbaa42",
-    "principles/06_cases.md": "7fb269a46a61663e54460e400539811e822f07fc50f13d293364820b09eca769",
-    "principles/07_evidence.md": "d6ba5c975a88d80827c47f88f869e62ef251fc47912ed041fb8f27cdea0048b8",
-    "principles/08_business_delivery_checklist.md": "053e1f00fc0093b1f4c74d4707ef22fb29f973e09b0a82e0d8a9de67c8374744",
-    "trial/FEEDBACK_TEMPLATE.md": "4c2b33a9a90b46188cdfe53fc59e0f585360f56f4f96a097227cb1e1fc73a368",
-    "trial/README.md": "5049828ab7f254ff222633e1e67fb642a0672f2f1e9c381014d6cc7dda4f3efc",
-    "trial/TASK_PROMPT.md": "604d7fac1f222f6f3a87178884958f431c4015afe7f4de5d5dbd7291a728ccdb",
+    "AGENTS.md": "ca638ef1aa0178f534b4deef65bb382eb8aa3245d7bdc3a49bca05430a5ef543",
+    "README.md": "ab6a172506829a658df79d81728cd2295190182359d2990595815de8866aaaf7",
+    "principles/01_prompt.md": "0ce7949c9fc74bbc12ba986380603858a9a3b338e19d14985f61177ecc4d4575",
+    "principles/02_context.md": "253b8f653fdf1a404059a1def98da860d523bb5d0feee052bdb7751ee4abb312",
+    "principles/03_harness.md": "7092bcdbe5c1e54a950d463a681c5a2d2535c08cf293734722ef330f1489a867",
+    "principles/04_evaluation.md": "75e9ce24f9073862d9aa5a072b60308e891dc01141a34240b2a4207fa0adf577",
+    "principles/05_security.md": "18c4a0c9f02821c78a7c357982dd259fecc81b07ca23f7c8172e0d162793d4ce",
+    "principles/06_cases.md": "770d7f5fd5be7e2886a18f53e40577b170abb91472c3a63232a80d723c700798",
+    "principles/07_evidence.md": "acc41f29e64797e76e511726c53ec0fe0dcc8164807a4198ce5fa4e9b11dc567",
+    "principles/08_business_delivery_checklist.md": "8a9edf13e283250234df24685882783c86ca6b08fdff25a9091476d3b69c05d1",
+    "trial/FEEDBACK_TEMPLATE.md": "032e7f36c912ba0c6a0a3a54d954ca61e062c1bb12db6c0fd8fb43282444a4bf",
+    "trial/README.md": "9b216070e468743f8c6b9da459c54d05c03ef0d44d452e1e718e01e26be78ba0",
+    "trial/TASK_PROMPT.md": "3a2ed7baba4d7f4a72c7b7907417a383a0a70c08e0a9db681d0339949a86042b",
     "trial/feedback/2026-10-16-project-e-context-recovery.md": "bb0f5c813be7c5fb23a6fc8c5429b98315b4e2fab12d94cfb6bcf6b64d23f6b7",
-    "trial/feedback/2026-10-16-project-e-proposed-additions.md": "78c9fbf5e9b45a9edbe0c23ef5919c15a7676e2646836c380efd65590cf0af9c"
-  }
+    "trial/feedback/2026-10-16-project-e-proposed-additions.md": "78c9fbf5e9b45a9edbe0c23ef5919c15a7676e2646836c380efd65590cf0af9c",
+    "trial/feedback/2026-10-18-project-e-decision-changes-and-limits.md": "cccc97b109140eebe29d30cba12bd8ab1cb2d73852100c75c40250671c00cd6c",
+    "trial/feedback/2026-10-18-project-e-integration-suggestions.md": "0d94d88ad0e673f6ffcbe81c2f446e3e453729fe6f469a9a74e3aeb1fdd46c42",
+    "trial/feedback/2026-10-18-project-e-evidence.json": "4e1a3e79288b0db9094418951cff4d55641c416148b212948fee907776c341e7"
+  },
+  "hash_basis": "UTF-8 text normalized to LF, matching Git blob content; normalize CRLF to LF when checking a Windows checkout."
 }

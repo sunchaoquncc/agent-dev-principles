@@ -1,0 +1,194 @@
+{
+  "schema": "project-e-public-evidence-summary-v1",
+  "date": "2026-10-18",
+  "provenance": "Owner-reviewed aggregate export from retained private requests, tool records and saved-body readbacks. Raw customer inputs and private source are not published; this is not independent public reproduction.",
+  "guidance": {
+    "core_version": "v0.13",
+    "core_commit": "e8ada9d2b5a0353a63bb3f1eba1288aa8b5c0ac1",
+    "repository_head_before_feedback": "23f8299ae642b5ac38de52090abdf3be6442b45f",
+    "independent_unguided_development_control": false,
+    "later_sessions_already_exposed": true
+  },
+  "prior_context_recovery": {
+    "already_reported_not_new_cases": true,
+    "real_history_tasks": 7,
+    "real_history_first_request_AB": "all unchanged",
+    "synthetic_midpoint_http_bytes": {
+      "A": 76438,
+      "B": 56365
+    },
+    "synthetic_assertions": {
+      "total": 12,
+      "A_pass": 1,
+      "B_pass": 12
+    },
+    "related_test_suite_passes": 278,
+    "real_business_model_calls": 0,
+    "development_assistant_cost": null,
+    "human_minutes": null
+  },
+  "revision_mechanism": {
+    "same_original_corrections_replayed": true,
+    "targets": 48,
+    "corrected_targets": 2,
+    "other_46_edits_unchanged": true,
+    "old_retargeting_absent_in_corrected_contracts": true,
+    "related_checks_passed": 134,
+    "whole_task": {
+      "A": {
+        "saved_sections": 49,
+        "business_pass": false,
+        "seconds_to_terminal": 762.68297,
+        "known_sidecar_cost_cny": 0.945871
+      },
+      "R1": {
+        "saved_sections": 46,
+        "business_pass": false,
+        "summed_request_processing_seconds": 829.819329,
+        "extra_operator_confirmation": 1,
+        "known_sidecar_cost_cny": 1.633912
+      },
+      "exact_saved_version_readback": true,
+      "java_editor_cost": null,
+      "strict_causal_quality_or_cost_AB": false,
+      "final_R1_1_full_task_rerun": false
+    }
+  },
+  "rejected_method_experiments": {
+    "known_usage_calls": 7,
+    "known_estimated_cost_cny": 0.335329,
+    "core_error_resolved": false,
+    "runtime_method_candidate_withdrawn": true,
+    "batch_probe_tool_availability_confound": true,
+    "raw_api_422_fixture_error_usage": null
+  },
+  "reliability_diagnostic": {
+    "original_tasks": 2,
+    "attempts": 9,
+    "valid_model_results": 8,
+    "target_judgment_pass": 1,
+    "target_judgment_fail": 4,
+    "evidence_insufficient": 1,
+    "judgment_not_reached": 2,
+    "known_estimated_cost_cny": 0.127971,
+    "provider_seconds_sum": 114.91,
+    "missing_usage_attempts": 1,
+    "same_reported_fingerprint": true,
+    "requested_model": "deepseek-flash",
+    "thinking_effort": "high",
+    "max_output_tokens": 16384,
+    "fixed_underlying_snapshot_proven": false,
+    "minimal_changes": [
+      "remove prior assistant reasoning and decisions",
+      "reduce current candidate batch",
+      "archived observations in a fresh-conversation representation"
+    ],
+    "single_factor_AB": false,
+    "whole_tasks_executed": 0,
+    "returned_business_tools_executed": false,
+    "production_frequency_estimate": null,
+    "human_review_minutes": null,
+    "rows": [
+      {
+        "case": "E-CONDITION",
+        "condition": "full",
+        "trial": 1,
+        "verdict": "evidence_insufficient",
+        "provider_seconds": 28.707,
+        "known_estimated_cost_cny": 0.026967,
+        "input_tokens": 95285,
+        "cached_input_tokens": 95104,
+        "output_tokens": 6221
+      },
+      {
+        "case": "E-CONDITION",
+        "condition": "full",
+        "trial": 2,
+        "verdict": "target_judgment_fail",
+        "provider_seconds": 25.55,
+        "known_estimated_cost_cny": 0.024711,
+        "input_tokens": 95285,
+        "cached_input_tokens": 95104,
+        "output_tokens": 5657
+      },
+      {
+        "case": "E-CONDITION",
+        "condition": "minimal",
+        "trial": 1,
+        "verdict": "target_judgment_fail",
+        "provider_seconds": 11.522,
+        "known_estimated_cost_cny": 0.020675,
+        "input_tokens": 27021,
+        "cached_input_tokens": 15488,
+        "output_tokens": 2208
+      },
+      {
+        "case": "E-CONDITION",
+        "condition": "minimal",
+        "trial": 2,
+        "verdict": "judgment_not_reached",
+        "provider_seconds": 5.582,
+        "known_estimated_cost_cny": 0.004471,
+        "input_tokens": 27021,
+        "cached_input_tokens": 26880,
+        "output_tokens": 948
+      },
+      {
+        "case": "E-DELETE",
+        "condition": "full",
+        "trial": 1,
+        "verdict": "target_judgment_pass",
+        "provider_seconds": 15.821,
+        "known_estimated_cost_cny": 0.016067,
+        "input_tokens": 61995,
+        "cached_input_tokens": 61824,
+        "output_tokens": 3665
+      },
+      {
+        "case": "E-DELETE",
+        "condition": "full",
+        "trial": 2,
+        "verdict": "target_judgment_fail",
+        "provider_seconds": 15.472,
+        "known_estimated_cost_cny": 0.016079,
+        "input_tokens": 61995,
+        "cached_input_tokens": 61824,
+        "output_tokens": 3668
+      },
+      {
+        "case": "E-DELETE",
+        "condition": "minimal",
+        "trial": 1,
+        "verdict": "judgment_not_reached",
+        "provider_seconds": 8.721,
+        "known_estimated_cost_cny": 0.015489,
+        "input_tokens": 24117,
+        "cached_input_tokens": 15616,
+        "output_tokens": 1669
+      },
+      {
+        "case": "E-DELETE",
+        "condition": "minimal",
+        "trial": 2,
+        "verdict": "target_judgment_fail",
+        "provider_seconds": 3.535,
+        "known_estimated_cost_cny": 0.003512,
+        "input_tokens": 24117,
+        "cached_input_tokens": 23936,
+        "output_tokens": 713
+      }
+    ]
+  },
+  "cost_limits": [
+    "Tariffs and discounts are those recorded for each experiment, not current quotes or invoices.",
+    "Missing usage, developer-assistant consumption and human time are unknown, not zero.",
+    "Cases recur across phases; do not sum phase task counts into distinct affected users.",
+    "Provider seconds and component costs are not end-to-end successful-task costs."
+  ],
+  "current_decisions": [
+    "retain verified bounded engineering repairs",
+    "withdraw unproven runtime method expansion",
+    "stop repeated same-layer prompting and simple batch shrinking without new evidence",
+    "no default multi-model routing, self-review loop or production deployment"
+  ]
+}

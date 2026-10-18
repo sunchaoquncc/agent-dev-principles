@@ -12,6 +12,8 @@ v0.13 · 2026-10-14。帮助开发助手与工程团队决定如何分配模型�
 
 ### 已收录的实践反馈
 
+- [项目E：决定变化、真实结果与投入限度](trial/feedback/2026-10-18-project-e-decision-changes-and-limits.md)：追踪已有做法、用户推动与指导后改变，保留持平、退化和未决，2026-10-18。
+- [项目E：知识库吸收建议](trial/feedback/2026-10-18-project-e-integration-suggestions.md)及[脱敏证据摘要](trial/feedback/2026-10-18-project-e-evidence.json)：建议先补诊断/停止分支与可修订判断案例，不直接扩充核心规则。
 - [项目E：上下文与错误恢复的前后试用](trial/feedback/2026-10-16-project-e-context-recovery.md)：局部工程收益、持平结果与未验证的模型行为，2026-10-16。
 - [项目E：六条候选补充知识](trial/feedback/2026-10-16-project-e-proposed-additions.md)：结合开发标准和历史经验提出的条件性建议，尚未并入核心原则。
 
