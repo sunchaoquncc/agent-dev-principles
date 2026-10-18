@@ -1,0 +1,29 @@
+{
+  "head": "c793d10b9c983ccaf2ed757b482d45cd138c8fd7",
+  "overlay": [
+    ".agents/skills/editpro-body-schedule/SKILL.md",
+    ".agents/skills/editpro-problem-discovery/SKILL.md",
+    ".agents/skills/editpro-task-rewrite-core/SKILL.md",
+    "bid_agent_sidecar/body_caption_index.py",
+    "bid_agent_sidecar/body_schedule_index.py",
+    "bid_agent_sidecar/body_schedule_plan.py",
+    "bid_agent_sidecar/definition.py",
+    "bid_agent_sidecar/rewrite_discovery_owner.py",
+    "bid_agent_sidecar/rewrite_generated_body_review.py",
+    "bid_agent_sidecar/sdk_tools.py",
+    "docs/product-principle.md",
+    "docs/python-sdk-agent-architecture.md",
+    "prompts/runtime/editpro_body_result_review.md",
+    "tests/test_body_caption_index.py",
+    "tests/test_body_deletion_contract.py",
+    "tests/test_body_schedule_index.py",
+    "tests/test_body_schedule_plan.py",
+    "tests/test_review_conclusion_turn.py"
+  ],
+  "source": "current working version, not production frozen baseline",
+  "cases": [
+    "T161",
+    "T147",
+    "T061"
+  ]
+}

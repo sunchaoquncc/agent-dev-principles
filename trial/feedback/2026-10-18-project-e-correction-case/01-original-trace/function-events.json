@@ -1,0 +1,1054 @@
+{
+  "kind": "historical function I/O excerpt, not new execution",
+  "events": [
+    {
+      "source": "D:\\Project\\bid-agent-sidecar-develop\\runs\\editpro-priority-fixes-20261018\\evidence\\D\\state\\sdk-traces.private.jsonl",
+      "line": 64,
+      "startedAt": "2026-10-18T05:13:20.162443+00:00",
+      "endedAt": "2026-10-18T05:13:20.531174+00:00",
+      "name": "review_recall_candidate_group",
+      "input": {
+        "group_id": "recall-group:e1a259fdb2eda3bb6a40",
+        "decisions": [
+          {
+            "candidateHandle": "rewrite-candidate:04c28f5dc768d33336e298cc",
+            "decision": "repair",
+            "problemFamily": "删除招聘相关内容",
+            "businessReason": "正文以“招聘专员负责”承接入职信息录入，属于招聘环节表述，用户明确不需要招聘内容。",
+            "expectedChange": "删除“由招聘专员负责”的招聘岗位表述，改为直接说明新员工入职时录入员工基本信息及岗位信息并同步花名册；离职、转岗、工龄管控三类触发规则原文保留。",
+            "preserveFacts": [
+              "离职时更新离职日期字段、标记离职状态、补充离职原因及结算情况并按月汇总盖章提交",
+              "转岗时更新岗位名称与所属部门、记录调整生效日期及审批文件编号",
+              "外包员工工龄满2年触发校验，符合条件转正或分流并归档盖章"
+            ]
+          },
+          {
+            "candidateHandle": "rewrite-candidate:09b4fa3e39eb73342b696f0f",
+            "decision": "repair",
+            "problemFamily": "删除社会保险相关内容",
+            "businessReason": "入职日期用途中列明“社保缴纳”，属于用户要求删除的社会保险内容。",
+            "expectedChange": "删除“社保缴纳”表述，入职日期仍作为工龄计算的依据；岗位名称与职责、用工形式说明、工作地点标识及2年保存要求原文保留。",
+            "preserveFacts": [
+              "以员工正式签订劳动合同之日作为入职日期",
+              "设立入职日期台账并定期核对",
+              "工作地点变更记录保存不少于2年",
+              "供应商与员工签订劳动合同并承担法定雇主责任"
+            ]
+          },
+          {
+            "candidateHandle": "rewrite-candidate:6086c4dba29b2c6cca70dfb9",
+            "decision": "repair",
+            "problemFamily": "删除社会保险相关内容",
+            "businessReason": "正文在转化前置清算和后续衔接中安排社保状态核对、社保补缴、停保等社保责任，属于用户要求删除的社会保险内容。",
+            "expectedChange": "前置权益清算中删除社保状态核对及社保补缴，改为核对未结考勤及薪资并清理工资结算、加班费支付等劳动关系权益；后续衔接中删除“停保”，保留停薪及用工备案注销；其余转化流程原文保留。",
+            "preserveFacts": [
+              "驻场管理员为唯一对接端口，接收筛选标准及名额并共同确认拟转化人员台账",
+              "清算需形成书面报告并由员工签字确认，档案保存不少于2年",
+              "出具解除劳动合同证明、切断连续工龄并提交日丰集团留存",
+              "配合日丰集团开展招录核验工作"
+            ]
+          },
+          {
+            "candidateHandle": "rewrite-candidate:700203612a5d73e16ad027b9",
+            "decision": "repair",
+            "problemFamily": "删除社会保险相关内容",
+            "businessReason": "劳动合同范本第5条将社保公积金个人部分列为本公司代扣规则，第6条整条为社会保险与公积金缴纳条款，均属用户要求删除的社会保险内容。",
+            "expectedChange": "第5条劳动报酬条款删除“及社保公积金个人部分”，仅保留代扣个人所得税规则；第6条删除“自员工入职当日起办理参保手续、足额缴纳社会保险及住房公积金”整句，将条标改为福利与商业保险条款，保留保额不低于80万元商业意外保险及保费凭票报销、工伤及意外险理赔由我公司牵头处理；其余条款原文保留。",
+            "preserveFacts": [
+              "工资由我公司对公账户统一发放，工资构成含基本工资、加班费、绩效奖金及津贴补贴",
+              "商业意外保险保额不低于80万元，保费按日丰集团规则凭票报销",
+              "工伤及意外险理赔由我公司牵头处理，日丰集团仅提供急救协助",
+              "合同期限、工时休假、合同解除与工龄切断、争议责任划分条款"
+            ]
+          },
+          {
+            "candidateHandle": "rewrite-candidate:88504c9815bb638141e7d965",
+            "decision": "repair",
+            "problemFamily": "删除社会保险相关内容",
+            "businessReason": "工资扣减分类、计算方法及表格行均设置社保扣款，属于用户要求删除的工资扣缴中的社保内容。",
+            "expectedChange": "扣减项目分类删除“社保”，保留个人所得税、公积金扣款、商业保险代扣及其他法定扣款；扣减金额计算方法删除社保扣款规则，仅保留公积金扣款按工资基数及地方比例计算；表格删除“社保扣款”行，保留个人所得税与商业保险代扣两行及填报说明、异常处理机制。",
+            "preserveFacts": [
+              "个人所得税依据最新税率表核算",
+              "商业保险代扣按80万元保额标准执行",
+              "表格备注列在有异常时填写，扣减金额由劳务核算岗核算后填写",
+              "异常处理由考勤薪酬专员记录、人事主管审核、项目负责人审批"
+            ]
+          },
+          {
+            "candidateHandle": "rewrite-candidate:8b69b905a0fbae2f6b6b4cfe",
+            "decision": "preserve",
+            "problemFamily": "删除社会保险相关内容",
+            "businessReason": "本节仅涉及工资银行代发主体责任、个税代扣代缴申报及代发凭证留存，未涉及社会保险或招聘内容，按原文保留。"
+          },
+          {
+            "candidateHandle": "rewrite-candidate:d562bd0a34b004dc1dea32d9",
+            "decision": "repair",
+            "problemFamily": "删除社会保险相关内容",
+            "businessReason": "本节第2条整条为社会保险扣款说明（养老、医疗、失业保险及参保地政策），属于用户要求删除的社会保险内容。",
+            "expectedChange": "删除第2条社会保险扣款说明整条，保留个人所得税扣减说明和住房公积金扣减说明，并将后续条目序号顺延。",
+            "preserveFacts": [
+              "个人所得税按适用税率计算并每月提交盖章纳税申报记录",
+              "住房公积金扣减按参保地政策设置比例、按时足额缴存并保留缴存记录",
+              "每月向员工提供扣减明细"
+            ]
+          },
+          {
+            "candidateHandle": "rewrite-candidate:d9a58b70d61edf5c0a5ab980",
+            "decision": "repair",
+            "problemFamily": "删除社会保险相关内容",
+            "businessReason": "本节第2条整条为社会保险登记与缴费办理，属于用户要求删除的社会保险内容。",
+            "expectedChange": "删除第2条社会保险登记整条，保留劳动合同签署、商业保险投保、门禁/账号开通三项手续，并将条目序号顺延。",
+            "preserveFacts": [
+              "与每名员工签订劳动合同并由我方独立签章",
+              "为外包员工购买保额80万元的商业保险并提供记录及发票供甲方审核报销",
+              "按甲方提供的门禁及系统账号接口协调完成权限开通"
+            ]
+          },
+          {
+            "candidateHandle": "rewrite-candidate:db690a90a359feef40e2f8cd",
+            "decision": "repair",
+            "problemFamily": "删除社会保险相关内容",
+            "businessReason": "解除证明结清内容中列明社保公积金，属于用户要求删除的社会保险内容。",
+            "expectedChange": "权利义务结清说明中删除“社保公积金”，保留工资、加班费、经济补偿（如有）已足额结清及工作交接退还、无未履行义务的表述；模板其余要素保留。",
+            "preserveFacts": [
+              "模板由我司作为唯一用人单位出具签章并标注流水编号",
+              "离职原因四类选项及2年工龄到期转正专属条款",
+              "一式三联分别由公司存档、员工留存、提交日丰集团归档"
+            ]
+          },
+          {
+            "candidateHandle": "rewrite-candidate:e2a2ef198f8d4d763c64bb00",
+            "decision": "repair",
+            "problemFamily": "删除社会保险相关内容",
+            "businessReason": "案例结尾以“社保福利专员”作为协同岗位，属社保岗位表述，需按用户要求去除社保表述。",
+            "expectedChange": "将案例结尾协同岗位“社保福利专员”改为人事专员，保留法务专员及驻场管理员协同；两个案例的工伤送医、申报、鉴定、商业保险理赔、全额赔付、无劳动争议及2年档案留存内容原文保留。",
+            "preserveFacts": [
+              "24小时内协同送医、48小时内向人社部门提交工伤申报",
+              "医疗费用及伤残赔付由投标人全额支付，不向甲方转嫁",
+              "商业保险理赔流程同步启动，甲方仅提供事故情况说明",
+              "工伤相关档案资料留存不少于2年"
+            ]
+          },
+          {
+            "candidateHandle": "rewrite-candidate:e3f09bb48c9ea0fa17657edf",
+            "decision": "repair",
+            "problemFamily": "删除社会保险相关内容",
+            "businessReason": "实发工资字段说明中包含扣除社保金额，属于用户要求删除的社会保险内容。",
+            "expectedChange": "实发工资字段说明删除“社保及”，改为扣除个人所得税及公积金后的金额；汇总统计维度、2年保存要求、签字盖章存档与流程图说明保留。",
+            "preserveFacts": [
+              "实发工资按基本工资、加班费、奖金及其他补贴扣除个人所得税及公积金后计算",
+              "按部门、职位维度汇总并保存不少于2年",
+              "每月导出打印并由考勤薪酬专员、人事主管、项目负责人签字盖章存档"
+            ]
+          },
+          {
+            "candidateHandle": "rewrite-candidate:f970d195778c9dcc90e4a250",
+            "decision": "repair",
+            "problemFamily": "删除社会保险相关内容",
+            "businessReason": "离职工资结算中列明社保扣款计算，属于用户要求删除的社会保险内容。",
+            "expectedChange": "工资结算规则删除“社保扣款”，改为独立完成个税扣款的计算；福利清算项目及支付时间节点原文保留。",
+            "preserveFacts": [
+              "依实际出勤工时与计件数量核算工资，工资表由供应商签章",
+              "通过供应商账户发放工资并提供工资条签收",
+              "离职手续办结后次月15日前完成工资及福利支付"
+            ]
+          },
+          {
+            "candidateHandle": "rewrite-candidate:05a646e92decae9211ca5015",
+            "decision": "repair",
+            "problemFamily": "删除社会保险相关内容",
+            "businessReason": "审计整改责任分工中由“社保福利专员”跟进工伤类问题，属社保岗位表述。",
+            "expectedChange": "将工伤处理类问题的跟岗岗位“社保福利专员”改为人事专员，四类问题分类、整改措施及闭环验证内容原文保留。",
+            "preserveFacts": [
+              "按人事管理、薪酬核算、工伤处理、劳动纠纷四类分析根因",
+              "各岗位在业务负责人统筹下完成整改并定期汇报",
+              "整改效果经内部评审确认并纳入日常管理流程"
+            ]
+          },
+          {
+            "candidateHandle": "rewrite-candidate:08fb53d0d8de27508ccd96c4",
+            "decision": "repair",
+            "problemFamily": "删除社会保险相关内容",
+            "businessReason": "本节在工伤申报岗位和风险防控中涉及社保福利专员及社保参保文件检查，属社保表述。",
+            "expectedChange": "将收集受伤信息、整理申报材料的岗位“社保福利专员”改为人事专员；风险防控措施中删除“社保参保”，改为定期检查并更新劳动合同等基础文件；赔付流程、责任承担及历史分析保留。",
+            "preserveFacts": [
+              "事故后启动应急响应并配合甲方提供急救协助",
+              "由供应商作为法定主体承担全部赔偿责任",
+              "建立事故报告与处理台账，档案材料归档可追溯"
+            ]
+          },
+          {
+            "candidateHandle": "rewrite-candidate:6805debc22854a0dafdb8984",
+            "decision": "repair",
+            "problemFamily": "删除社会保险相关内容",
+            "businessReason": "离职手续清单及核查要点包含社保停缴手续，属于用户要求删除的社会保险内容。",
+            "expectedChange": "手续清单中“社保公积金停缴手续”改为“公积金停缴手续”，核查要点第(4)项同步改为核查公积金停缴手续是否及时办理；其余清单、核查要点及改进机制保留。",
+            "preserveFacts": [
+              "离职文件包括解除或终止劳动合同证明、离职审批单、工作交接清单、工资结算单据",
+              "所有离职文件加盖供应商公章并保存至少2年",
+              "建立专项检查、反馈渠道与闭环整改机制"
+            ]
+          },
+          {
+            "candidateHandle": "rewrite-candidate:77da44dc6f8bd26a0ad0f8b3",
+            "decision": "repair",
+            "problemFamily": "删除社会保险相关内容",
+            "businessReason": "承诺第4条将社保公积金缴纳列为独立承担的法定雇主责任，属用户要求删除的社会保险责任内容。",
+            "expectedChange": "第4条删除“社保公积金缴纳”，保留薪酬发放、工伤申报赔偿、劳动纠纷处置等我司独立承担的法定雇主责任及其余五条承诺原文。",
+            "preserveFacts": [
+              "我司为300名外包员工唯一法定用人单位并直接签订劳动合同",
+              "独立承担薪酬发放、工伤申报赔偿、劳动纠纷处置责任",
+              "不使用日丰集团印章出具用工文件，不转移赔付责任",
+              "违约责任及甲方终止合同权利条款"
+            ]
+          },
+          {
+            "candidateHandle": "rewrite-candidate:b84d9a5c4df4bd03ccb6e18a",
+            "decision": "repair",
+            "problemFamily": "删除社会保险相关内容",
+            "businessReason": "本节整节围绕社保公积金办理资料归档，其中参保登记、停保及缴费核对均属社会保险内容，用户明确不需要社会保险。",
+            "expectedChange": "删除社会保险办理资料归档内容（社保参保登记表、停保通知书、社保基数申报及缴费核对），将归档范围、归档节点、保存期限和核对机制改写为住房公积金办理资料归档（缴存登记、停缴、缴存基数申报、缴存核对），保留5个工作日归档、季度复核、不少于2年保存及双人核对机制。",
+            "preserveFacts": [
+              "资料加盖公章并注明日期",
+              "业务完成后5个工作日内初步归档、季度末3个工作日内复核",
+              "保存期限不少于2年，纸质与电子版分开保管",
+              "双人核对与抽查纠错机制"
+            ]
+          }
+        ]
+      },
+      "output": {
+        "ok": true,
+        "status": "reviewing",
+        "groupId": "recall-group:e1a259fdb2eda3bb6a40",
+        "reviewedCandidateCount": 17,
+        "unreviewedCount": 32,
+        "nextGroup": "recall-group:cf53a086d75aa77839bc",
+        "complete": false,
+        "nextRecommendedAction": "使用 currentGroupId 提交 currentCandidates 中已确定的 decisions，可分次提交；已接纳判断自动保存，不需等整组全部拟案完毕。repair 在同一层填写 candidateHandle、decision、problemFamily、businessReason、expectedChange（本节具体对象、目标状态及关联变化）、preserveFacts（关键保护事实字符串数组）；删除也用 repair。preserve/defer 只填 candidateHandle、decision、businessReason，分别表示原样保留/事实未决。关联改法先形成一致安排，再提交；保留事实聚焦易误改的数字、条件和责任，不重抄全部原文。已有可提交判断时直接登记，不只报告进度再重新组织；接纳判断会自动展示进展。沿 nextGroup 继续，不重复全文读取或已接纳判断；当前批次不代表全文，最后共享要求不覆盖已登记的本节改法。"
+      },
+      "omittedOutput": "review projection with repeated body excerpts omitted; input decisions are complete"
+    },
+    {
+      "source": "D:\\Project\\bid-agent-sidecar-develop\\runs\\editpro-priority-fixes-20261018\\evidence\\D\\state\\sdk-traces.private.jsonl",
+      "line": 74,
+      "startedAt": "2026-10-18T05:13:40.158450+00:00",
+      "endedAt": "2026-10-18T05:13:40.541637+00:00",
+      "name": "review_recall_candidate_group",
+      "input": {
+        "decisions": [
+          {
+            "businessReason": "总体承诺第2条将社会保险列入合规遵守范围，属用户要求删除的社会保险内容。",
+            "candidateHandle": "rewrite-candidate:22b64fee8ef79fbb400084c4",
+            "decision": "repair",
+            "expectedChange": "第2条合规经营准则承诺中删除“社会保险”，保留劳动用工、工伤保险、个人所得税相关法律法规及广东省、佛山市属地监管规定、配合监管检查与违规责任承诺；其余四条承诺原文保留。",
+            "preserveFacts": [
+              "我公司为300名外包员工唯一法定责任主体，不将责任分包、转包或委托第三方",
+              "严禁招标人岗位人员直接对外包员工下达管理指令",
+              "所有人事类文件由我方编制、多级复核、审批签发并盖我方公章",
+              "服务范围仅限招标文件约定的300名外包员工人力资源全流程管理"
+            ],
+            "problemFamily": "删除社会保险相关内容"
+          },
+          {
+            "businessReason": "储备人力来源中包含“招聘渠道”，属招聘环节表述。",
+            "candidateHandle": "rewrite-candidate:2c52a5213f1357fa9bd7c959",
+            "decision": "repair",
+            "expectedChange": "储备人力来源删除“招聘渠道”表述，改为内部人员储备库、长期合作的人力供给渠道及合作院校等途径；筛选标准、调度流程、岗前培训与考核、上岗审批及表格填报说明原文保留。",
+            "preserveFacts": [
+              "筛选标准包括工作经验、专业技能认证及职业素养",
+              "储备人力需经面试、背景核查及健康体检",
+              "上岗前完成岗位职责、操作规程、安全及企业文化培训并通过考核",
+              "未通过考核人员重新培训或调离岗位"
+            ],
+            "problemFamily": "删除招聘相关内容"
+          },
+          {
+            "businessReason": "辞退后续处理中安排办理社保停保或转移手续，属用户要求删除的社会保险内容。",
+            "candidateHandle": "rewrite-candidate:336ffcbd73809df6a6cc28ef",
+            "decision": "repair",
+            "expectedChange": "第3条后续处理第(3)项删除“社保”，改为依法为员工办理公积金等相关账户的转移手续；辞退条件、通知内容与格式、模板示例、工资奖金结清、资料2年存档及争议全权处置保留。",
+            "preserveFacts": [
+              "四类辞退情形及程序正当、依据充分要求",
+              "辞退通知列明员工基本信息、辞退原因与依据、生效日期，盖公章并由授权代表签字",
+              "结清工资、奖金及应付款项并提供结算清单",
+              "辞退过程资料存档不少于2年"
+            ],
+            "problemFamily": "删除社会保险相关内容"
+          },
+          {
+            "businessReason": "转正交接内容及流程中包含社保公积金转移凭证与社保账户转移，属用户要求删除的社会保险内容。",
+            "candidateHandle": "rewrite-candidate:3915af9d8670af2fe5fc8579",
+            "decision": "repair",
+            "expectedChange": "交接内容中“社保公积金转移凭证”改为“公积金转移凭证”；交接流程第(3)项删除“社保”表述，改为协助完成公积金账户转移手续；其余交接文件、提前一个月提交名单、盖章离职证明、档案移交、书面报告及两年档案管理保留。",
+            "preserveFacts": [
+              "提前一个月向日丰集团提交转正人员名单及材料",
+              "出具盖章正式离职证明并交日丰集团保存",
+              "交接后形成书面报告并由双方签字确认",
+              "人事档案保持至少两年管理并配合查询"
+            ],
+            "problemFamily": "删除社会保险相关内容"
+          },
+          {
+            "businessReason": "工伤承诺第2条以“社保福利专员”作为到场处置岗位，属社保岗位表述。",
+            "candidateHandle": "rewrite-candidate:43a6e40ba03459ea02f0a5c3",
+            "decision": "repair",
+            "expectedChange": "第2条将“社保福利专员”改为“人事专员”，保留1小时内到场固定证据、24小时内启动内部工伤响应及招标方仅提供急救协助；其余商业保险投保、48小时工伤申报、赔付责任、资料归档及不向招标方转嫁责任条款原文保留。",
+            "preserveFacts": [
+              "单人保额不低于80万元，覆盖意外身故、意外伤残及工作相关医疗费用",
+              "员工离职当日办理商业保险停保减员，新入职补员实时投保",
+              "48小时内向佛山市三水当地人社部门提交工伤认定申报材料",
+              "商业保险及工伤保险赔付不足部分由我方全额承担",
+              "资料留存不低于2年并支持只读查验"
+            ],
+            "problemFamily": "删除社会保险相关内容"
+          },
+          {
+            "businessReason": "档案台账范围中列有社保公积金办理单据，属用户要求删除的社会保险内容。",
+            "candidateHandle": "rewrite-candidate:4d0bad2873d47aadb8c923e9",
+            "decision": "repair",
+            "expectedChange": "第1条档案台账清单删除“社保”，改为公积金及80万保额商业保险办理单据；其余纸质与电子档案保管、分级权限、双备份、公章用印、借阅审批、2年保存、作废文件销毁及期满移交内容原文保留。",
+            "preserveFacts": [
+              "10类人事台账覆盖在岗及离职员工",
+              "纸质档案防火防潮上锁集中保管、双人出入库核验",
+              "本地备份硬盘加云端加密双备份，每日备份、每月全量冷备份",
+              "项目资料自形成之日起保存不少于2年"
+            ],
+            "problemFamily": "删除社会保险相关内容"
+          },
+          {
+            "businessReason": "合规检查环节包含社保缴纳审核，属用户要求删除的社会保险内容。",
+            "candidateHandle": "rewrite-candidate:6b8cac048a6c7de87eaf52b0",
+            "decision": "repair",
+            "expectedChange": "第2条内部合规检查删除“社保缴纳”，改为每月由专人审核劳动合同签订、考勤记录、工资核算等关键环节；法律依据、整改报告备案、法务岗设置、外部监督与季度汇报内容原文保留。",
+            "preserveFacts": [
+              "所有管理文件以供应商名义签章",
+              "发现问题立即整改并形成书面报告提交内部管理层备案",
+              "设立劳动关系法务专员负责合规审查及风险提示",
+              "工作日9:00-18:00响应监督反馈，每季度汇报合规管理进展"
+            ],
+            "problemFamily": "删除社会保险相关内容"
+          },
+          {
+            "businessReason": "交接材料清单中列有社保缴费证明，属用户要求删除的社会保险内容。",
+            "candidateHandle": "rewrite-candidate:6c6f428792e495fbbe964c32",
+            "decision": "repair",
+            "expectedChange": "第1条材料种类删除“社保缴费证明”，保留劳动合同、考勤记录、工资发放凭证、培训考核记录、工伤处理材料及管理台账；交接流程、签字盖章确认、归档保管、2年保存、表格及流程图保留。",
+            "preserveFacts": [
+              "材料以供应商名义签章并遵守保密要求",
+              "交接需双方确认无误后签字盖章并明确保管责任",
+              "纸质与电子资料保存不少于2年",
+              "表格空白列在履约阶段按来源核定填写"
+            ],
+            "problemFamily": "删除社会保险相关内容"
+          },
+          {
+            "businessReason": "本节结算项目、时间节点及凭证留存均将社保费用缴纳列为结算内容，属用户要求删除的社会保险内容。",
+            "candidateHandle": "rewrite-candidate:8b54779d8035d20625fd209f",
+            "decision": "repair",
+            "expectedChange": "第1条结算项目删除社会保险费用缴纳及参保基数比例缴费核对申报，仅保留工资总额与个税扣缴；第2条时间节点删除社保按月申报缴纳安排，保留薪资核算5个工作日内完成、审核后经我方账户发放及凭证可随时核查；第3条删除社保缴纳由我方统一办理及缴费凭证留存，保留银行代发、工资条提供及资料保存不少于2年。",
+            "preserveFacts": [
+              "工资总额由计件数量与出勤工时独立核算",
+              "个税依法计算并代扣",
+              "薪资核算在每月结束后5个工作日内完成，经审核批准后发放",
+              "按月提供电子或纸质工资条，资料保存不少于2年"
+            ],
+            "problemFamily": "删除社会保险相关内容"
+          },
+          {
+            "businessReason": "本节整节为社保停保流程，用户明确不需要社会保险内容；公积金在其余小节保留，本节同步改写为公积金停缴流程以保持业务连贯。",
+            "candidateHandle": "rewrite-candidate:914d6dcadd48c083f4948f8b",
+            "decision": "repair",
+            "expectedChange": "将本节停保条件、停保操作、停保记录整体改为公积金停缴流程：离职、调动或其他法定情形时启动公积金停缴；由人事专员收集核实离职审批单及证明文件、通过人力资源管理系统提交停缴申请并记录操作日志、由人事专员核对停缴数据与员工信息一致性后提交正式停缴通知；记录表停保原因、停保日期改为停缴原因、停缴日期，保留离职与调动两行示例及停���合规要求。",
+            "preserveFacts": [
+              "离职、调动等法定情形触发停缴",
+              "操作依据离职审批单及证明文件，信息完整无误",
+              "系统记录操作日志并向相关部门提交正式通知，流程闭环"
+            ],
+            "problemFamily": "删除社会保险相关内容"
+          },
+          {
+            "businessReason": "突发补员措施中包含协调内部招聘渠道、发布招聘信息，属用户明确不需要的招聘内容。",
+            "candidateHandle": "rewrite-candidate:cb0893a59eb3502c1a98b92a",
+            "decision": "repair",
+            "expectedChange": "第2条快速补员措施删除“协调内部招聘渠道、紧急发布招聘信息”，保留储备人力库优先调配、与合作供应商联动调用富余人力短期支援，以及快速登记、体检、商业保险投保、上岗前安全培训考核及补员后跟踪评估、2年资料留存。",
+            "preserveFacts": [
+              "优先从储备人力库调配符合岗位要求人员",
+              "补员人员经快速登记、体检及商业保险投保",
+              "上岗前完成安全培训及考核",
+              "补员数据及评估结果每月汇总报甲方备案，资料保存不少于2年"
+            ],
+            "problemFamily": "删除招聘相关内容"
+          },
+          {
+            "businessReason": "预案制定流程将“招聘专员”列为协同岗位，属招聘岗位表述。",
+            "candidateHandle": "rewrite-candidate:d2cfce4bd73bebbf7ce0268e",
+            "decision": "repair",
+            "expectedChange": "第2条制定流程删除“招聘专员”，协同岗位保留人事专员、培训考核专员和劳动关系专员；预案内容构成、制定步骤及三级审批机制原文保留。",
+            "preserveFacts": [
+              "预案覆盖绩效不达标、纪律问题等原因分类及内部转岗、培训提升、正式离职等方式",
+              "分流或离职文件由我方签章并保存至少2年",
+              "预案经法务初审、业务负责人复核、公司管理层批准"
+            ],
+            "problemFamily": "删除招聘相关内容"
+          },
+          {
+            "businessReason": "劳动纠纷责任范围中列明社保公积金补缴，属用户要求删除的社会保险责任内容。",
+            "candidateHandle": "rewrite-candidate:deb5c557d4916357dad78bb9",
+            "decision": "repair",
+            "expectedChange": "第1条覆盖范围删除“社保公积金补缴、”，保留薪酬追索、工伤待遇争议、经济补偿赔偿金、带薪年休假、加班工资、福利待遇等劳动纠纷；其余全流程处置、成本自担、招标人仅提供客观证据、3个工作日结果告知及2年归档条款原文保留。",
+            "preserveFacts": [
+              "我方法定用人单位身份及全部法定责任承担",
+              "所有和解、赔付、裁决、罚款及维权费用由我方全额支付",
+              "招标人无需参与协商、调解、仲裁、诉讼决策",
+              "处置文书归档留存不少于2年"
+            ],
+            "problemFamily": "删除社会保险相关内容"
+          },
+          {
+            "businessReason": "人员管理考核指标中将社保列为独立核算内容，属用户要求删除的社会保险内容。",
+            "candidateHandle": "rewrite-candidate:f6bd299d85805cfd2ce0fcf9",
+            "decision": "repair",
+            "expectedChange": "第4项薪酬发放考核指标第(1)点删除“及社保”，改为独立核算工资、扣款及个税；其余七个模块指标与核验标准原文保留。",
+            "preserveFacts": [
+              "工资表由投标人编制、审核、批准并通过投标人账户发放",
+              "提供工资条供外包工签收并保存凭证",
+              "考勤与培训记录保存不少于2年",
+              "商业保险单据与发票可查验，工伤申报及赔偿由主体承担"
+            ],
+            "problemFamily": "删除社会保险相关内容"
+          },
+          {
+            "businessReason": "定向终止通知内容中列明薪资及社保结算安排，属用户要求删除的社会保险内容。",
+            "candidateHandle": "rewrite-candidate:fdd4a1cb1d4f30e2661bd7e1",
+            "decision": "repair",
+            "expectedChange": "第2条定向终止通知删除“社保”，终止通知内容保留终止原因、终止生效日期及薪资结算安排；终止触发依据及三项配套文件原文保留。",
+            "preserveFacts": [
+              "以2年工龄管控节点作为转正转化场景的合同终止触发条件",
+              "书面通知送达员工本人并抄送贵方备案留存签收记录",
+              "出具盖章解除或终止劳动合同证明及工龄切断说明",
+              "每月提交盖章离职人员花名册更新版"
+            ],
+            "problemFamily": "删除社会保险相关内容"
+          },
+          {
+            "businessReason": "应急响应通知流程中以“社保福利专员”作为同步岗位，属社保岗位表述。",
+            "candidateHandle": "rewrite-candidate:8ee3d36ea2a850dc75d76161",
+            "decision": "repair",
+            "expectedChange": "第2条多岗同步通知流程将“社保福利专员”改为“人事专员”，保留驻场管理人员向现场负责人及招标方对接人同步事故信息的安排；三级响应阈值及应急资源前置调度内容原文保留。",
+            "preserveFacts": [
+              "一般、较重、重大三级响应触发阈值",
+              "通知内容包括事故时间、地点、伤情等级及拟采取措施",
+              "驻场配备医药箱并定期检查更新，预备备用联络人员名单及车辆调度"
+            ],
+            "problemFamily": "删除社会保险相关内容"
+          }
+        ],
+        "group_id": "recall-group:cf53a086d75aa77839bc"
+      },
+      "output": {
+        "ok": true,
+        "status": "reviewing",
+        "groupId": "recall-group:cf53a086d75aa77839bc",
+        "reviewedCandidateCount": 33,
+        "unreviewedCount": 16,
+        "nextGroup": "recall-group:83fcdcebe04fcaa2f600",
+        "complete": false,
+        "nextRecommendedAction": "使用 currentGroupId 提交 currentCandidates 中已确定的 decisions，可分次提交；已接纳判断自动保存，不需等整组全部拟案完毕。repair 在同一层填写 candidateHandle、decision、problemFamily、businessReason、expectedChange（本节具体对象、目标状态及关联变化）、preserveFacts（关键保护事实字符串数组）；删除也用 repair。preserve/defer 只填 candidateHandle、decision、businessReason，分别表示原样保留/事实未决。关联改法先形成一致安排，再提交；保留事实聚焦易误改的数字、条件和责任，不重抄全部原文。已有可提交判断时直接登记，不只报告进度再重新组织；接纳判断会自动展示进展。沿 nextGroup 继续，不重复全文读取或已接纳判断；当前批次不代表全文，最后共享要求不覆盖已登记的本节改法。"
+      },
+      "omittedOutput": "review projection with repeated body excerpts omitted; input decisions are complete"
+    },
+    {
+      "source": "D:\\Project\\bid-agent-sidecar-develop\\runs\\editpro-priority-fixes-20261018\\evidence\\D\\state\\sdk-traces.private.jsonl",
+      "line": 84,
+      "startedAt": "2026-10-18T05:14:07.035077+00:00",
+      "endedAt": "2026-10-18T05:14:07.042022+00:00",
+      "name": "review_recall_candidate_group",
+      "input": {
+        "decisions": [
+          {
+            "businessReason": "签章权责中单设“社保福利专员”岗位负责社保公积金文件签章，属用户要求删除的社会保险内容。",
+            "candidateHandle": "rewrite-candidate:ceaba06a5b39c865c06e0d18",
+            "decision": "repair",
+            "expectedChange": "第1、2条将“社保福利专员”改为“福利专员”，其职责范围删除社保，改为“负责员工福利及公积金相关文件的签章”并确认该类文件合规性后签章；其余岗位签章职责、三级审核及用印登记流程原文保留。",
+            "preserveFacts": [
+              "所有需盖章文件以供应商名义签章",
+              "人事专员负责入离职手续、劳动合同及花名册签章",
+              "考勤记录保存不低于2年，未通过培训考核人员不得上岗",
+              "特殊文件需经劳动关系或法务专员二次审核后方可签章"
+            ],
+            "problemFamily": "删除社会保险相关内容"
+          },
+          {
+            "businessReason": "本节第1条整条为社保缴纳记录（缴费凭证、参保者明细、基数申报），属于用户要求删除的社会保险内容。",
+            "candidateHandle": "rewrite-candidate:de9761bf5e6998ee856f2020",
+            "decision": "repair",
+            "expectedChange": "删除第1条“社保缴纳记录管理”整条（含社会保险缴费凭证、参保人员明细表、基数申报表及年度报表），保留福利发放明细管理及商业保险办理与理赔两个部分并顺延序号；保留福利发放表与填报说明、理赔流程图。",
+            "preserveFacts": [
+              "福利发放记录含节日津贴、年终奖及法定或约定福利的发放时间、金额及签收信息",
+              "福利发放清单按月汇总并附审批文件，由人事专员、财务出纳审核存档",
+              "商业保险保额80万元，定期提供投保记录及发票凭据供甲方审核报销",
+              "事故后配合急救、收集材料并作为责任主体完成工伤申报及赔偿"
+            ],
+            "problemFamily": "删除社会保险相关内容"
+          },
+          {
+            "businessReason": "本节整节为社保参保完整性评估，用户明确不需要社会保险内容；公积金在其余小节保留，本节同步改写为公积金缴存完整性评估。",
+            "candidateHandle": "rewrite-candidate:f8fa7abca0291e03573edee9",
+            "decision": "repair",
+            "expectedChange": "将评估范围、评估指标、补救措施整体改为公积金缴存完整性评估：覆盖所有签订劳动合同的外包员工，核查缴存状态；指标改为劳动合同签署与生效时间一致性、员工基本信息与公积金系统记录匹配度、缴存基数申报准确性、缴存记录与工资核算对应关系；补救措施改为未缴存或漏缴立即启动补缴并提交材料至公积金管理部门、基数申报错误重新核算后补足差额、每月末由福利专员自查并形成书面报告；表格字段“参保状态”改为“缴存状态”，填报说明同步修改。",
+            "preserveFacts": [
+              "评估对象包括新入职员工、岗位调动人员及工龄管控涉及人员",
+              "每月末开展自查并形成书面报告提交管理层审阅",
+              "表格进度列依据管理部门回执、自查报告填写"
+            ],
+            "problemFamily": "删除社会保险相关内容"
+          },
+          {
+            "businessReason": "工伤响应岗位及岗位权责表中以“社保福利专员”固定证据，属社保岗位表述。",
+            "candidateHandle": "rewrite-candidate:d8352e3f42493390e80c65bd",
+            "decision": "repair",
+            "expectedChange": "第1条轻微伤情30分钟初步报告及第3条岗位权责清单、岗位职责表中的“社保福利专员”均改为“福利专员”，保留其固定事故证据、访谈目击证人、收集影像记录及材料职责；其余上报时效、现场处置与岗位职责原文保留。",
+            "preserveFacts": [
+              "轻微伤情30分钟内初步报告，严重伤情10分钟内上报项目负责人",
+              "现场实施止血、固定等应急处理并设置警戒线隔离事故区域",
+              "驻场管理员第一时间到场组织送医并及时汇报",
+              "项目负责人统筹协调各方资源"
+            ],
+            "problemFamily": "删除社会保险相关内容"
+          },
+          {
+            "businessReason": "全量权责清单将社保列入雇主法定义务，异常处置又由“社保福利专员”负责，两处均含用户要求删除的社保内容。",
+            "candidateHandle": "rewrite-candidate:d93af5e04510596dbe4e78a8",
+            "decision": "repair",
+            "expectedChange": "第1条第(1)项删除“薪酬社保”中的社保，改为履行薪酬发放、工伤处理及劳动争议解决等雇主法定义务；第3条第(2)项将“社保福利专员”改为“福利专员”；其余权责清单、招标方协助事项及异常处置规则原文保留。",
+            "preserveFacts": [
+              "与外包员工签订劳动合同并履行雇主法定义务",
+              "每月按时提交盖章员工花名册，资料保存不少于2年",
+              "商业险保额80万元费用由招标方承担并在事故现场提供急救协助",
+              "所有劳动纠纷由我方应对，确保招标方免受连带责任"
+            ],
+            "problemFamily": "删除社会保险相关内容"
+          },
+          {
+            "businessReason": "归档责任岗位及表格中均以“社保福利专员”承担商业保险材料整理，属社保岗位表述。",
+            "candidateHandle": "rewrite-candidate:ebf9f9857befcdb951a2531e",
+            "decision": "repair",
+            "expectedChange": "第2条资料收集与归档表中“社保福利专员”均改为“福利专员”，保留其按月整理商业保险相关材料、整理赔付及理赔记录的职责；归档范围、编号、入库、加密备份及安全管控要求原文保留。",
+            "preserveFacts": [
+              "归档涵盖工伤事故类、投保凭证类、理赔类资料",
+              "纸质资料存入防火防潮档案柜上锁保管，电子资料加密备份",
+              "资料留存时长不低于2年",
+              "未经许可不得对外泄露归档信息"
+            ],
+            "problemFamily": "删除社会保险相关内容"
+          },
+          {
+            "businessReason": "人员异动对接将补员提交给“招聘专员”，紧急事件又由“社保福利、招聘”岗位参与，两处分别涉及招聘与社保表述。",
+            "candidateHandle": "rewrite-candidate:c619672a4b19a14a9ab8f147",
+            "decision": "repair",
+            "expectedChange": "第4条删除“招聘专员”岗位表述，改为将人员缺口需求提交至公司内部补员流程启动补员；第6条紧急事件岗位表述删除“社保福利、招聘”，改为法务、福利等相关岗位人员及时抵达现场协同处置；其余对接时效、唯一对接人口径及入离职调岗由我方独立完成的要求原文保留。",
+            "preserveFacts": [
+              "驻场管理员为唯一固定对接人，日丰集团不直接向外包员工派工",
+              "任务拆解15分钟内完成、2小时内反馈派工确认",
+              "处置完成后30分钟反馈整改情况，人员异动同步告知补员到岗时间",
+              "紧急事件处置完成后2个工作日内提交书面处置报告"
+            ],
+            "problemFamily": "删除社会保险相关内容"
+          },
+          {
+            "businessReason": "岗位职责划分中设“招聘专员”“社保福利专员”岗位，并分别承担招聘补员与社保公积金办理职责，均属用户要求删除的内容。",
+            "candidateHandle": "rewrite-candidate:edebcd82b91e28598a0e24f6",
+            "decision": "repair",
+            "expectedChange": "第1条岗位职责中删除“招聘专员负责人员补员和人才库建设”整句；将“社保福利专员负责社保公积金办理和工伤申报处理”改为“福利专员负责公积金办理和工伤申报处理”；其余岗位职责、岗位责任书、系统任务跟踪及月度履职评估内容原文保留。",
+            "preserveFacts": [
+              "岗位人员均需签署岗位责任书，明确职责范围及考核标准",
+              "系统中记录并跟踪岗位任务执行情况，确保责任可追溯",
+              "由业务负责人牵头每月审核各岗位履职情况",
+              "评估结果作为岗位绩效考核依据"
+            ],
+            "problemFamily": "删除社会保险相关内容"
+          },
+          {
+            "businessReason": "工伤赔偿流程以社保部门、社保政策、社保赔付范围及社保赔付款项贯穿全节，属用户要求删除的社会保险表述。",
+            "candidateHandle": "rewrite-candidate:467f04d51e404dad9f3a32dd",
+            "decision": "repair",
+            "expectedChange": "将“社保部门”改为“工伤保险经办部门”，“社保政策规定的各项补偿”改为“工伤保险政策规定的各项补偿”，“超出社保赔付范围”改为“超出工伤保险赔付范围”，“社保赔付款项”改为“工伤保险待遇款项”；劳动能力鉴定协助、赔偿金核算与支付落实、商业保险补充赔付及记录留存内容保留。",
+            "preserveFacts": [
+              "提交工伤认定书、医疗诊断证明等材料完成劳动能力鉴定申请",
+              "核算一次性伤残补助金、伤残津贴等待遇",
+              "商业保险保额80万元对超出工伤保险赔付部分补充核算与理赔",
+              "支付记录及凭证全流程可追溯"
+            ],
+            "problemFamily": "删除社会保险相关内容"
+          },
+          {
+            "businessReason": "工伤申报流程以社会保险经办机构、社会保险行政部门及社会保险相关规定为办理依据，含用户要求删除的社保表述。",
+            "candidateHandle": "rewrite-candidate:e94adbd4be357f55c4679bdc",
+            "decision": "repair",
+            "expectedChange": "将“社会保险经办机构”改为“工伤保险经办机构”，“社会保险行政部门”改为“工伤保险行政部门”，“根据社会保险相关规定”改为“根据工伤保险相关规定”；事故报告提交、工伤认定申请步骤、医疗救治协调及盖章要求原文保留。",
+            "preserveFacts": [
+              "事故后通过专属客服热线上报总部并由工伤处理专员确认事故详情",
+              "报告均加盖公章确保法律效力",
+              "按《工伤认定申请表》要求提交花名册、考勤汇总表及医疗诊断证明",
+              "医疗费用由我方统一结算，避免员工额外负担"
+            ],
+            "problemFamily": "删除社会保险相关内容"
+          },
+          {
+            "businessReason": "证据收集分工中以“社保福利专员”整理工伤申报材料，属社保岗位表述。",
+            "candidateHandle": "rewrite-candidate:805c9c62cedb2c4153fdefa9",
+            "decision": "repair",
+            "expectedChange": "第2条第(5)项将“社保福利专员”改为“福利专员”，保留其统一整理工伤申报材料并上传商业保险系统的职责；其余清单内容、收集方式及三层验证机制原文保留。",
+            "preserveFacts": [
+              "文件由我方主体签章并存档，保存不少于2年",
+              "考勤记录原始打卡数据由甲方提供只读权限",
+              "工资条由外包工签字确认后留存",
+              "内部审计、电子备份与随机抽样复核机制"
+            ],
+            "problemFamily": "删除社会保险相关内容"
+          },
+          {
+            "businessReason": "月度续保校验中由“社保福利专员”梳理保单清单，属社保岗位表述。",
+            "candidateHandle": "rewrite-candidate:35c0cac47b761ef079ce2f40",
+            "decision": "repair",
+            "expectedChange": "第3条将“社保福利专员”改为“福利专员”，保留其提前梳理即将到期保单、校核在职状态与保额配置的职责；新员工24小时内投保、离职当日停保减员及续保记录留存内容原文保留。",
+            "preserveFacts": [
+              "新员工自上岗之日起纳入有效的商业保险覆盖",
+              "离职当日依盖章离职审批单发起停保并生成书面凭证存档",
+              "保单到期前7天批量续保预警",
+              "续保记录完整留存以备查验"
+            ],
+            "problemFamily": "删除社会保险相关内容"
+          },
+          {
+            "businessReason": "申报材料归集、交叉校验及提交表中均以“社保福利专员”为责任岗位，属社保岗位表述。",
+            "candidateHandle": "rewrite-candidate:8b64f5e5ecf5d61a6adfc0d3",
+            "decision": "repair",
+            "expectedChange": "第1、2条及提交流程表中“社保福利专员”均改为“福利专员”，保留其提取劳动合同与商业保险单据、初次审核归集材料、准备工伤认定申报材料的职责；人事专员复核、24小时归集、48小时校验及属地提交环节原文保留。",
+            "preserveFacts": [
+              "材料在24小时内完成初步归集并上传内部管理系统",
+              "双人交叉校验需在48小时内完成并形成校验记录",
+              "问题材料退回原岗重新完善",
+              "最终提交人社部门的材料符合属地要求"
+            ],
+            "problemFamily": "删除社会保险相关内容"
+          },
+          {
+            "businessReason": "申报时效管控中由“社保福利专员”24小时内完成材料整理，属社保岗位表述。",
+            "candidateHandle": "rewrite-candidate:aae758cd85427888bd5e366f",
+            "decision": "repair",
+            "expectedChange": "第2条第(2)项将“社保福利专员”改为“福利专员”，保留24小时内完成初步材料整理的时限；属地申报材料清单、48小时提交时限、超时预警及属地认定适配细则原文保留。",
+            "preserveFacts": [
+              "1小时内启动内部响应、固定证据并访谈目击证人",
+              "48小时内向佛山市三水区人社部门提交完整工伤认定申报材料",
+              "材料含工伤认定申请表、劳动合同、医疗诊断证明及现场证据",
+              "建立超时预警机制并通过信息化系统监控进度"
+            ],
+            "problemFamily": "删除社会保险相关内容"
+          },
+          {
+            "businessReason": "医疗费用垫付流转中以“社保福利专员”审核预支，属社保岗位表述。",
+            "candidateHandle": "rewrite-candidate:bb31490454c7dab5c4665f80",
+            "decision": "repair",
+            "expectedChange": "第2条将“社保福利专员”改为“福利专员”，保留其审核并预支救治费用、财务出纳核销的流程；定点医院对接、全周期关怀及书面记录存档要求原文保留。",
+            "preserveFacts": [
+              "与项目周边定点医院建立绿色通道对接机制",
+              "费用申请、审核预支、救治后核销并保留凭证",
+              "住院探视、康复跟进及返岗岗位调整或技能培训",
+              "关怀措施以书面记录存档备查"
+            ],
+            "problemFamily": "删除社会保险相关内容"
+          },
+          {
+            "businessReason": "月度保单凭证更新中由“社保福利专员”收集整理上月保单，属社保岗位表述。",
+            "candidateHandle": "rewrite-candidate:c2b13b017ee494fc17d26c60",
+            "decision": "repair",
+            "expectedChange": "第3条将“社保福利专员”改为“福利专员”，保留其每月5日前收集整理上月保单、缴费凭证及发票并归档上报的职责；多方查询通道、凭证分类归档及离职当日停保标注要求原文保留。",
+            "preserveFacts": [
+              "批量核验通道支持招标方导出投保人员清单及保单状态",
+              "保单按员工编号加投保日期编号，缴费凭证按月汇总",
+              "纸质材料上锁保管、电子版加密备份，保存不低于2年",
+              "离职人员当日办理停保减员并在当月更新记录中标注"
+            ],
+            "problemFamily": "删除社会保险相关内容"
+          }
+        ],
+        "group_id": "recall-group:83fcdcebe04fcaa2f600"
+      },
+      "output": {
+        "ok": true,
+        "status": "complete",
+        "groupId": "recall-group:83fcdcebe04fcaa2f600",
+        "reviewedCandidateCount": 49,
+        "unreviewedCount": 0,
+        "nextGroup": "",
+        "complete": true,
+        "nextRecommendedAction": "全部批次及逐节改法已完成；调用 record_rewrite_problem_set 提交单个 sharedProblem 的共同来源和边界，省略范围选择字段。程序沿已审可执行 repair 目标承接各节改法和保护事实，共同摘要不会覆盖逐节改法。保留与未决项不写入；冻结成功后沿原执行计划和编辑流程继续。"
+      },
+      "omittedOutput": "review projection with repeated body excerpts omitted; input decisions are complete"
+    },
+    {
+      "source": "D:\\Project\\bid-agent-sidecar-develop\\runs\\editpro-priority-fixes-20261018\\evidence\\D\\state\\sdk-traces.private.jsonl",
+      "line": 94,
+      "startedAt": "2026-10-18T05:14:31.059653+00:00",
+      "endedAt": "2026-10-18T05:14:31.061652+00:00",
+      "name": "_editpro_rejected_call",
+      "input": {
+        "requested_name": "review_recall_candidate_group",
+        "requested_arguments": "{\"decisions\": [{\"businessReason\": \"本节整节均为社保停保的条件、操作与记录，用户明确不需要包含社会保险；本节无其他独立职责，不将内容改写成其他主题。\", \"candidateHandle\": \"rewrite-candidate:914d6dcadd48c083f4948f8b\", \"decision\": \"repair\", \"expectedChange\": \"删除本节全部正文（停保条件、停保操作、停保记录表及填报说明），本节不再保留社保停保流程及表格内容。\", \"preserveFacts\": [], \"problemFamily\": \"删除社会保险相关内容\"}], \"group_id\": \"recall-group:cf53a086d75aa77839bc\"}"
+      },
+      "output": {
+        "ok": false,
+        "status": "rejected",
+        "executed": false,
+        "recoverable": true,
+        "toolCallRejected": true,
+        "requestedTool": "review_recall_candidate_group",
+        "reasonCode": "tool_not_available_this_step",
+        "availableTools": [
+          "report_progress",
+          "request_user_confirmation",
+          "record_rewrite_problem_set",
+          "read_rewrite_candidate_body",
+          "read_body_caption_index",
+          "read_body_schedule_materials",
+          "save_body_schedule_plan",
+          "read_body_schedule_plan",
+          "record_task_action_plan",
+          "set_todos",
+          "update_todo",
+          "get_todos",
+          "read_task_understanding",
+          "read_native_source_fields",
+          "search_native_source_fields",
+          "recall_candidate_facts",
+          "read_directory_tree",
+          "search_directory"
+        ],
+        "message": "该动作没有执行；已完成的动作保持有效。",
+        "nextRecommendedAction": "依据 availableTools 中当前可调用的能力和已有结果继续原任务，补齐对应工具要求的前置事实；不要重放已成功动作。"
+      }
+    },
+    {
+      "source": "D:\\Project\\bid-agent-sidecar-develop\\runs\\editpro-priority-fixes-20261018\\evidence\\D\\state\\sdk-traces.private.jsonl",
+      "line": 104,
+      "startedAt": "2026-10-18T05:14:33.137789+00:00",
+      "endedAt": "2026-10-18T05:14:33.305129+00:00",
+      "name": "read_rewrite_candidate_body",
+      "input": {
+        "candidate_handles": [
+          "rewrite-candidate:914d6dcadd48c083f4948f8b",
+          "rewrite-candidate:f8fa7abca0291e03573edee9"
+        ],
+        "detail": "full"
+      },
+      "output": {
+        "ok": true,
+        "status": "success",
+        "detail": "full",
+        "items": [
+          {
+            "candidateHandle": "rewrite-candidate:914d6dcadd48c083f4948f8b",
+            "leafTitle": "（四）社保停保执行流程",
+            "nodePath": "第二章 质量保证与售后服务等服务承诺 / 第七节 工龄管控与人员流动管理服务承诺 / 四、未达标人员分流安置 / （四）社保停保执行流程",
+            "matchedTerms": [
+              "社会保险",
+              "社保"
+            ],
+            "detail": "full",
+            "body": "1.停保条件\n我方将严格执行社保停保政策，明确适用于本项目的停保条件。当外包员工出现离职、调动或其他法定情形时，及时启动社保停保操作。所有停保操作均以符合国家和地方劳动用工及社会保险相关法律法规为前提，确保操作合法合规。\n2.停保操作\n(1)确认触发停保条件后，由人事专员负责收集并核实员工的离职审批单及相关证明文件，确保信息完整无误。\n(2)根据已核实的信息，人事专员将通过人力资源管理系统提交停保申请，并在系统中记录相关操作日志。\n(3)完成停保申请后，社保福利专员需核对停保数据与员工信息的一致性，并向相关部门提交正式停保通知，确保流程闭环。\n3.停保记录\n\n| 序号 | 员工姓名 | 身份证号 | 停保原因 | 停保日期 | 备注 |\n\n| 1 | | | 离职 | | 无 |\n\n| 2 | | | 调动 | | 无 |",
+            "usage": "problem_set_business_evidence_only",
+            "chapterSummary": "阐述社保停保执行的具体流程；停保条件：明确社保停保的适用条件与触发因素。；停保操作：描述社保停保的具体操作步骤与时间安排。；停保记录：制定社保停保后的记录存档与查询机制。"
+          },
+          {
+            "candidateHandle": "rewrite-candidate:f8fa7abca0291e03573edee9",
+            "leafTitle": "（四）社保参保完整性评估",
+            "nodePath": "第三章 证据链与合规保障方案 / 第五节 劳动争议处置方案 / 一、争议预警机制 / （四）社保参保完整性评估",
+            "matchedTerms": [
+              "社保"
+            ],
+            "detail": "full",
+            "body": "1.评估范围\n本方案对社保参保完整性的评估覆盖所有与我方签订劳动合同的外包员工，确保每位员工均纳入社保体系。评估对象包括但不限于新入职员工、岗位调动人员及工龄管控涉及人员，全面核查其参保状态，保证无遗漏现象发生。\n2.评估指标\n在评估社保参保完整性时，重点关注以下关键指标：劳动合同签署与生效时间的一致性；员工基本信息与社保系统记录的匹配度；参保基数申报的准确性；缴费记录与实际工资核算的对应关系。通过以上指标核验，确保参保信息的真实性和完整性。\n3.补救措施\n针对未参保或漏缴情况，设计以下整改措施： 发现未及时参保的员工，立即启动补缴程序并提交相关材料至社保机构； 对于参保基数申报错误的情形，重新核算基数后进行调整并补足差额； 建立定期自查机制，每月末由社保福利专员核查参保状态，并形成书面报告提交管理层审阅。\n\n| 序号 | 员工姓名 | 身份证号 | 参保状态 | 问题描述及处理进度 |\n\n| [跨5列] 1 |\n\n注：本表格为社保参保核查填报模板，进度列履约后由社保福利专员依据社保机构回执、自查报告填写",
+            "usage": "problem_set_business_evidence_only",
+            "chapterSummary": "提供社保参保完整性评估方案；评估范围：确定社保参保完整性评估的覆盖范围及对象；评估指标：列举用于评估社保参保完整性的关键指标；补救措施：设计针对未参保或漏缴情况的整改措施"
+          }
+        ],
+        "targetNodeCount": 2,
+        "rewriteMethod": {
+          "skillName": "editpro-task-rewrite-core",
+          "status": "already_delivered"
+        }
+      }
+    },
+    {
+      "source": "D:\\Project\\bid-agent-sidecar-develop\\runs\\editpro-priority-fixes-20261018\\evidence\\D\\state\\sdk-traces.private.jsonl",
+      "line": 114,
+      "startedAt": "2026-10-18T05:14:47.145586+00:00",
+      "endedAt": "2026-10-18T05:14:47.154198+00:00",
+      "name": "record_rewrite_problem_set",
+      "input": {
+        "problem_set": {
+          "sharedProblem": {
+            "businessProblem": "全文多处将社会保险缴纳责任（参保、停保、补缴、缴费、社保扣款、社保归档、社保岗位）与招聘环节（招聘专员、招聘渠道、紧急发布招聘信息）作为服务承诺和流程内容；用户明确本项目不需要包含社会保险和招聘，并确认连同社保责任与工资扣缴说明一起删除。",
+            "expectedChange": "逐节按已确认改法删除社会保险与招聘相关内容：涉及社保的句子、条项、扣减类别、表格行和社保岗位称谓予以删除或去除；涉及招聘的专员岗位、招聘渠道、紧急发布招聘信息及招聘职责予以删除；同段落中工资发放、个税代扣、住房公积金、商业意外保险、工伤处置、劳动合同、档案管理等独立职责按原文保留；删改后条项序号顺延、语句连贯。",
+            "preserveFacts": [
+              "300名外包员工的服务规模及我方法定用人单位身份",
+              "商业意外保险单人保额不低于80万元，保费按日丰集团规则凭票报销",
+              "工伤后48小时内向佛山市三水区人社部门提交工伤认定申报材料",
+              "人事档案及各类记录保存不少于2年",
+              "离职手续办结后次月15日前完成工资及福利支付",
+              "双人交叉校验、三级审批及盖章留存等原有审核机制"
+            ],
+            "sourceBoundary": "仅依据本节当前正文与用户“不需要包含社会保险、不需要包含招聘，连同社保责任与工资扣缴说明一起删除”的要求改写正文文字；不修改目录结构、源头字段与过程数据，不引入未读取的外部事实。",
+            "confidence": 0.9,
+            "ambiguity": {
+              "ambiguous": false,
+              "reason": "用户已明确删除社会保险及招聘内容，并确认连同社保责任与工资扣缴说明一并删除；各小节保留项按原文独立职责确定。"
+            },
+            "basisRoute": "body_dirty_basis_clean",
+            "minimalRewriteBoundary": "仅删除或改写涉及社会保险、招聘的句段、条项、表格行及岗位称谓，并做必要的序号与条标衔接；其他条款、表格、图片说明和承诺保持原样。",
+            "forbiddenAdditions": [
+              "不得新增社会保险参保、停保、补缴、缴费或社保扣款的承诺和流程",
+              "不得新增招聘、招录或招聘渠道相关职责与岗位",
+              "不得新增原文没有的比例、金额、期限或岗位设置",
+              "不得以社保相关内容替换为其他未在原文出现的业务承诺"
+            ]
+          },
+          "problems": [
+            {
+              "candidateHandle": "rewrite-candidate:914d6dcadd48c083f4948f8b",
+              "businessProblem": "本节整节为社保停保的条件、操作与记录，用户明确不需要包含社会保险，本节无其他独立职责。",
+              "expectedChange": "删除本节全部正文（停保条件、停保操作、停保记录表及表格内容），本节不再保留社保停保流程及相关表格文字。",
+              "preserveFacts": [],
+              "sourceBoundary": "依据本节当前正文与用户删除社会保险内容的要求。",
+              "confidence": 0.92,
+              "ambiguity": {
+                "ambiguous": false,
+                "reason": "整节内容均为社保停保，删除范围明确。"
+              },
+              "basisRoute": "body_dirty_basis_clean",
+              "minimalRewriteBoundary": "仅删除本节全部目标文字，不改动本节以外的其他小节。",
+              "forbiddenAdditions": [
+                "不得新增公积金停缴、参保或其他替代业务流程",
+                "不得新增社保或招聘相关表述"
+              ]
+            },
+            {
+              "candidateHandle": "rewrite-candidate:f8fa7abca0291e03573edee9",
+              "businessProblem": "本节整节为社保参保完整性评估（评估范围、指标、补救措施及核查表），用户明确不需要包含社会保险，本节无其他独立职责。",
+              "expectedChange": "删除本节全部正文（评估范围、评估指标、补救措施、参保核查表及填表说明），本节不再保留社保参保评估内容。",
+              "preserveFacts": [],
+              "sourceBoundary": "依据本节当前正文与用户删除社会保险内容的要求。",
+              "confidence": 0.92,
+              "ambiguity": {
+                "ambiguous": false,
+                "reason": "整节内容均为社保参保评估，删除范围明确。"
+              },
+              "basisRoute": "body_dirty_basis_clean",
+              "minimalRewriteBoundary": "仅删除本节全部目标文字，不改动本节以外的其他小节。",
+              "forbiddenAdditions": [
+                "不得新增公积金缴存评估或其他替代主题内容",
+                "不得新增社保或招聘相关表述"
+              ]
+            }
+          ]
+        }
+      },
+      "output": {
+        "ok": false,
+        "status": "blocking",
+        "blocked": true,
+        "recoverable": true,
+        "reasonCode": "rewrite_problem_review_scope_conflict",
+        "message": "完整 candidateReview 的 repair 集合是唯一目标范围，不能再混入显式 problems 或其他共享范围。",
+        "sharedProblemCount": 1,
+        "explicitProblemCount": 2,
+        "nextRecommendedAction": "已完成的逐节审查就是目标范围：去掉显式 problems，只保留一个省略范围选择字段（不填 candidateHandles/candidateResultSetRef/reviewProblemFamily）的 sharedProblem 共同来源与边界重新提交；程序会逐节承接各节已审改法与保护事实，不要重抄句柄或改法。"
+      }
+    },
+    {
+      "source": "D:\\Project\\bid-agent-sidecar-develop\\runs\\editpro-priority-fixes-20261018\\evidence\\D\\state\\sdk-traces.private.jsonl",
+      "line": 124,
+      "startedAt": "2026-10-18T05:14:52.274054+00:00",
+      "endedAt": "2026-10-18T05:14:52.848772+00:00",
+      "name": "record_rewrite_problem_set",
+      "input": {
+        "problem_set": {
+          "sharedProblem": {
+            "ambiguity": {
+              "ambiguous": false,
+              "reason": "用户已明确删除社会保险及招聘内容，并确认连同社保责任与工资扣缴说明一并删除；各节保留项与改写边界已在逐节审查中确定。"
+            },
+            "basisRoute": "body_dirty_basis_clean",
+            "businessProblem": "全文多处将社会保险责任（参保、停保、补缴、缴费、社保扣款、社保归档、社保岗位）与招聘环节（招聘专员、招聘渠道、招聘信息发布）作为服务承诺和流程内容；用户明确不需要包含社会保险和招聘，并确认连同社保责任与工资扣缴说明一起删除。",
+            "confidence": 0.9,
+            "expectedChange": "逐节按已定改法删除社会保险与招聘相关文字：涉及社保的句子、条项、扣减类别、表格行和社保岗位称谓删除或去除，涉及招聘的专员岗位、招聘渠道、招聘信息发布及招聘职责删除；同段落中工资发放、个税代扣、住房公积金、商业意外保险、工伤处置、劳动合同、档案管理等独立职责按原文保留；删改后条项序号顺延、语句连贯，不新增社保或招聘承诺。",
+            "forbiddenAdditions": [
+              "不得新增社会保险参保、停保、补缴、缴费或社保扣款的承诺和流程",
+              "不得新增招聘、招录或招聘渠道相关职责与岗位",
+              "不得新增原文没有的比例、金额、期限或岗位设置",
+              "不得新增社保或招聘相关的表格栏目与附件"
+            ],
+            "minimalRewriteBoundary": "仅删除或改写涉及社会保险、招聘的句段、条项、表格行及岗位称谓，并做必要的序号与条标衔接；其他条款、表格、图片说明和承诺保持原样。",
+            "preserveFacts": [
+              "300名外包员工的服务规模及我方法定用人单位身份",
+              "商业意外保险单人保额不低于80万元，保费按日丰集团规则凭票报销",
+              "工伤后48小时内向佛山市三水区人社部门提交工伤认定申报材料",
+              "人事档案及各类记录保存不少于2年",
+              "离职手续办结后次月15日前完成工资及福利支付",
+              "双人交叉校验、三级审批及盖章留存等原有审核机制"
+            ],
+            "sourceBoundary": "仅依据各节当前正文与用户“不需要包含社会保险、不需要包含招聘，连同社保责任与工资扣缴说明一起删除”的要求改写正文文字；不修改目录结构、源头字段与过程数据，不引入未读取的外部事实。"
+          }
+        }
+      },
+      "output": {
+        "ok": true,
+        "status": "frozen",
+        "reasonCode": "rewrite_problem_transaction_frozen",
+        "targetCount": 48,
+        "basisDirtyTargetCount": 0,
+        "deduped": false,
+        "newPlanRequired": true,
+        "nextRecommendedAction": "核对实际补丁预演的完整句意、关联内容和保护事实；需要更正时在零写入下重新提交 ProblemSet。确认后调用 record_task_action_plan，为当前 ProblemSet 记录新的 mutation-ready 业务计划再执行。"
+      }
+    },
+    {
+      "source": "D:\\Project\\bid-agent-sidecar-develop\\runs\\editpro-priority-fixes-20261018\\evidence\\D\\state\\sdk-traces.private.jsonl",
+      "line": 134,
+      "startedAt": "2026-10-18T05:14:59.116803+00:00",
+      "endedAt": "2026-10-18T05:14:59.880268+00:00",
+      "name": "record_task_action_plan",
+      "input": {
+        "plan": {
+          "intents": [
+            {
+              "actionType": "正文改写",
+              "executionConstraints": {
+                "forbiddenSurfaceTerms": [
+                  "社会保险",
+                  "社保福利专员",
+                  "招聘专员",
+                  "招聘渠道"
+                ],
+                "preserveRequirements": [
+                  "300名外包员工的服务规模及我方法定用人单位身份",
+                  "商业意外保险单人保额不低于80万元及保费凭票报销",
+                  "工伤后48小时内向佛山市三水区人社部门提交申报材料",
+                  "人事档案与各类记录保存不少于2年",
+                  "其他与社保、招聘无关的条款、表格和承诺保持原样"
+                ]
+              },
+              "intentId": "intent-delete-social-insurance-recruiting",
+              "semanticDecision": {
+                "summary": "删除正文中的社会保险参保、停保、补缴、缴费、社保扣款、社保归档及社保岗位表述，删除招聘专员、招聘渠道、招聘信息发布等招聘内容；同段落中工资发放、个税代扣、住房公积金、商业意外保险、工伤处置、劳动合同、档案管理等独立职责保留。"
+              },
+              "scope": {
+                "scopeKind": "problem_set",
+                "scopeReason": "按已冻结的48个已审小节逐节执行社保与招聘内容删除，范围限于这些小节的正文文字。"
+              },
+              "targetLocation": "全文涉及社会保险与招聘内容的48个已审小节"
+            }
+          ],
+          "mode": "mutation_ready",
+          "planId": "plan-delete-social-insurance-recruiting",
+          "userGoal": "删除正文中社会保险（含社保责任、工资扣缴中的社保内容）与招聘相关内容，保持目录结构与各小节其他内容归属不变。"
+        }
+      },
+      "output": {
+        "ok": true,
+        "status": "pass",
+        "message": "已记录执行计划，后续修改会按已确认的范围、依据和目标进行边界校验。",
+        "plan": {
+          "planId": "plan-delete-social-insurance-recruiting",
+          "status": "",
+          "mode": "mutation_ready",
+          "executionState": "",
+          "intentCount": 1,
+          "evidenceCellCount": 0,
+          "needsConfirmation": false,
+          "intentIds": [
+            "intent-delete-social-insurance-recruiting"
+          ],
+          "candidateOnlyIntentCount": 0,
+          "mutationReadyIntentCount": 1
+        },
+        "contract": {
+          "mode": "provenance_only",
+          "requireIntentEvidence": false,
+          "requireTargetLocation": true,
+          "requireMutationTrace": true,
+          "evidenceRequiredActionTypes": [
+            "qualification_judgement",
+            "risk_judgement",
+            "commitment_judgement",
+            "scoring_judgement"
+          ]
+        },
+        "validation": {
+          "status": "pass",
+          "checks": [
+            {
+              "name": "task_action_plan_contract",
+              "status": "pass",
+              "message": "TaskActionPlan 契约校验通过。"
+            }
+          ],
+          "blockingCount": 0,
+          "needsReviewCount": 0,
+          "summary": {
+            "planId": "plan-delete-social-insurance-recruiting",
+            "status": "",
+            "mode": "mutation_ready",
+            "executionState": "",
+            "intentCount": 1,
+            "evidenceCellCount": 0,
+            "needsConfirmation": false,
+            "intentIds": [
+              "intent-delete-social-insurance-recruiting"
+            ],
+            "candidateOnlyIntentCount": 0,
+            "mutationReadyIntentCount": 1
+          }
+        },
+        "boundToTransaction": true,
+        "planBinding": "mutation_ready_bound",
+        "requiredMutationTool": "section_rewrite",
+        "nextRecommendedAction": "执行已冻结的正文改写：调用 section_rewrite，沿用当前 ProblemSet 的目标和保护边界；不要再次读取 Skill Reference、重新召回或自行切换到源头/过程路线。"
+      }
+    },
+    {
+      "source": "D:\\Project\\bid-agent-sidecar-develop\\runs\\editpro-priority-fixes-20261018\\evidence\\D\\state\\sdk-traces.private.jsonl",
+      "line": 144,
+      "startedAt": "2026-10-18T05:15:03.315886+00:00",
+      "endedAt": "2026-10-18T05:15:05.768355+00:00",
+      "name": "section_rewrite",
+      "input": {
+        "plan_id": "plan-delete-social-insurance-recruiting",
+        "intent_id": "intent-delete-social-insurance-recruiting",
+        "target_location": "全文涉及社会保险与招聘内容的48个已审小节",
+        "scope": "section",
+        "execution_constraints": {
+          "forbiddenSurfaceTerms": [
+            "社会保险",
+            "社保福利专员",
+            "招聘专员",
+            "招聘渠道"
+          ],
+          "preserveRequirements": [
+            "300名外包员工的服务规模及我方法定用人单位身份",
+            "商业意外保险单人保额不低于80万元及保费凭票报销",
+            "工伤后48小时内向佛山市三水区人社部门提交申报材料",
+            "人事档案与各类记录保存不少于2年",
+            "其他与社保、招聘无关的条款、表格和承诺保持原样"
+          ]
+        }
+      },
+      "output": {
+        "status": "running"
+      },
+      "omittedOutput": "large runtime progress and body projection omitted"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "source": "D:\\Project\\bid-agent-sidecar-develop\\runs\\editpro-prewrite-revision-20261018\\evidence\\A\\T161\\request-journal.private.json",
+  "omitted": "progress arrays, provider details, account fields and unrelated request metadata",
+  "entries": [
+    {
+      "cid": "55a52a4e6205423e94bb7d1084475af9",
+      "prompt": "不需要包含社会保险，不需要包含招聘\n用户已确认：连同社保责任、工资扣缴说明一起删除。",
+      "displayInput": "",
+      "createdAt": "2026-10-18T07:55:53.385023+00:00",
+      "startedAt": "2026-10-18T07:55:53.385023+00:00",
+      "updatedAt": "2026-10-18T08:08:36.067993+00:00",
+      "finishedAt": "2026-10-18T08:03:01.173835+00:00",
+      "executionFinished": true,
+      "confirmationQuestion": "",
+      "confirmationReceipt": {},
+      "parentRequestId": ""
+    }
+  ]
+}

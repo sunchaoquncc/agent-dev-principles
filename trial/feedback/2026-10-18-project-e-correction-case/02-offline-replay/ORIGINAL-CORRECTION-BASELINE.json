@@ -1,0 +1,8 @@
+{
+  "correctionAcknowledged": true,
+  "alreadyComplete": true,
+  "actualDecisionChanged": false,
+  "finalCorrectionRejected": true,
+  "reasonCode": "rewrite_problem_review_scope_conflict",
+  "scope": "same original correction calls against immutable current-version baseline; no network or save"
+}

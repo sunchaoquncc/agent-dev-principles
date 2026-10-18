@@ -1,0 +1,194 @@
+{
+  "kind": "historical source excerpts, not model reasoning",
+  "manifestSource": "D:\\Project\\bid-agent-sidecar-develop\\runs\\editpro-priority-fixes-20261018\\evidence\\D\\T161\\manifest.private.json",
+  "request": {
+    "case": "T161",
+    "arm": "D",
+    "cid": "da86ed863b8444e9abf2498a6746f11b",
+    "sourceCid": "94ca37cfa64746f4965791174b87059a",
+    "originalPrompt": "不需要包含社会保险，不需要包含招聘",
+    "prompt": "不需要包含社会保险，不需要包含招聘\n用户已确认：连同社保责任、工资扣缴说明一起删除。"
+  },
+  "bodies": {
+    "source": "D:\\Project\\bid-agent-sidecar-develop\\runs\\editpro-priority-fixes-20261018\\evidence\\D\\state\\sdk-traces.private.jsonl",
+    "line": 104,
+    "startedAt": "2026-10-18T05:14:33.137789+00:00",
+    "endedAt": "2026-10-18T05:14:33.305129+00:00",
+    "name": "read_rewrite_candidate_body",
+    "input": {
+      "candidate_handles": [
+        "rewrite-candidate:914d6dcadd48c083f4948f8b",
+        "rewrite-candidate:f8fa7abca0291e03573edee9"
+      ],
+      "detail": "full"
+    },
+    "output": {
+      "ok": true,
+      "status": "success",
+      "detail": "full",
+      "items": [
+        {
+          "candidateHandle": "rewrite-candidate:914d6dcadd48c083f4948f8b",
+          "leafTitle": "（四）社保停保执行流程",
+          "nodePath": "第二章 质量保证与售后服务等服务承诺 / 第七节 工龄管控与人员流动管理服务承诺 / 四、未达标人员分流安置 / （四）社保停保执行流程",
+          "matchedTerms": [
+            "社会保险",
+            "社保"
+          ],
+          "detail": "full",
+          "body": "1.停保条件\n我方将严格执行社保停保政策，明确适用于本项目的停保条件。当外包员工出现离职、调动或其他法定情形时，及时启动社保停保操作。所有停保操作均以符合国家和地方劳动用工及社会保险相关法律法规为前提，确保操作合法合规。\n2.停保操作\n(1)确认触发停保条件后，由人事专员负责收集并核实员工的离职审批单及相关证明文件，确保信息完整无误。\n(2)根据已核实的信息，人事专员将通过人力资源管理系统提交停保申请，并在系统中记录相关操作日志。\n(3)完成停保申请后，社保福利专员需核对停保数据与员工信息的一致性，并向相关部门提交正式停保通知，确保流程闭环。\n3.停保记录\n\n| 序号 | 员工姓名 | 身份证号 | 停保原因 | 停保日期 | 备注 |\n\n| 1 | | | 离职 | | 无 |\n\n| 2 | | | 调动 | | 无 |",
+          "usage": "problem_set_business_evidence_only",
+          "chapterSummary": "阐述社保停保执行的具体流程；停保条件：明确社保停保的适用条件与触发因素。；停保操作：描述社保停保的具体操作步骤与时间安排。；停保记录：制定社保停保后的记录存档与查询机制。"
+        },
+        {
+          "candidateHandle": "rewrite-candidate:f8fa7abca0291e03573edee9",
+          "leafTitle": "（四）社保参保完整性评估",
+          "nodePath": "第三章 证据链与合规保障方案 / 第五节 劳动争议处置方案 / 一、争议预警机制 / （四）社保参保完整性评估",
+          "matchedTerms": [
+            "社保"
+          ],
+          "detail": "full",
+          "body": "1.评估范围\n本方案对社保参保完整性的评估覆盖所有与我方签订劳动合同的外包员工，确保每位员工均纳入社保体系。评估对象包括但不限于新入职员工、岗位调动人员及工龄管控涉及人员，全面核查其参保状态，保证无遗漏现象发生。\n2.评估指标\n在评估社保参保完整性时，重点关注以下关键指标：劳动合同签署与生效时间的一致性；员工基本信息与社保系统记录的匹配度；参保基数申报的准确性；缴费记录与实际工资核算的对应关系。通过以上指标核验，确保参保信息的真实性和完整性。\n3.补救措施\n针对未参保或漏缴情况，设计以下整改措施： 发现未及时参保的员工，立即启动补缴程序并提交相关材料至社保机构； 对于参保基数申报错误的情形，重新核算基数后进行调整并补足差额； 建立定期自查机制，每月末由社保福利专员核查参保状态，并形成书面报告提交管理层审阅。\n\n| 序号 | 员工姓名 | 身份证号 | 参保状态 | 问题描述及处理进度 |\n\n| [跨5列] 1 |\n\n注：本表格为社保参保核查填报模板，进度列履约后由社保福利专员依据社保机构回执、自查报告填写",
+          "usage": "problem_set_business_evidence_only",
+          "chapterSummary": "提供社保参保完整性评估方案；评估范围：确定社保参保完整性评估的覆盖范围及对象；评估指标：列举用于评估社保参保完整性的关键指标；补救措施：设计针对未参保或漏缴情况的整改措施"
+        }
+      ],
+      "targetNodeCount": 2,
+      "rewriteMethod": {
+        "skillName": "editpro-task-rewrite-core",
+        "status": "already_delivered"
+      }
+    }
+  },
+  "initialDecisions": [
+    {
+      "sourceLine": 74,
+      "decision": {
+        "businessReason": "本节整节为社保停保流程，用户明确不需要社会保险内容；公积金在其余小节保留，本节同步改写为公积金停缴流程以保持业务连贯。",
+        "candidateHandle": "rewrite-candidate:914d6dcadd48c083f4948f8b",
+        "decision": "repair",
+        "expectedChange": "将本节停保条件、停保操作、停保记录整体改为公积金停缴流程：离职、调动或其他法定情形时启动公积金停缴；由人事专员收集核实离职审批单及证明文件、通过人力资源管理系统提交停缴申请并记录操作日志、由人事专员核对停缴数据与员工信息一致性后提交正式停缴通知；记录表停保原因、停保日期改为停缴原因、停缴日期，保留离职与调动两行示例及停���合规要求。",
+        "preserveFacts": [
+          "离职、调动等法定情形触发停缴",
+          "操作依据离职审批单及证明文件，信息完整无误",
+          "系统记录操作日志并向相关部门提交正式通知，流程闭环"
+        ],
+        "problemFamily": "删除社会保险相关内容"
+      }
+    },
+    {
+      "sourceLine": 84,
+      "decision": {
+        "businessReason": "本节整节为社保参保完整性评估，用户明确不需要社会保险内容；公积金在其余小节保留，本节同步改写为公积金缴存完整性评估。",
+        "candidateHandle": "rewrite-candidate:f8fa7abca0291e03573edee9",
+        "decision": "repair",
+        "expectedChange": "将评估范围、评估指标、补救措施整体改为公积金缴存完整性评估：覆盖所有签订劳动合同的外包员工，核查缴存状态；指标改为劳动合同签署与生效时间一致性、员工基本信息与公积金系统记录匹配度、缴存基数申报准确性、缴存记录与工资核算对应关系；补救措施改为未缴存或漏缴立即启动补缴并提交材料至公积金管理部门、基数申报错误重新核算后补足差额、每月末由福利专员自查并形成书面报告；表格字段“参保状态”改为“缴存状态”，填报说明同步修改。",
+        "preserveFacts": [
+          "评估对象包括新入职员工、岗位调动人员及工龄管控涉及人员",
+          "每月末开展自查并形成书面报告提交管理层审阅",
+          "表格进度列依据管理部门回执、自查报告填写"
+        ],
+        "problemFamily": "删除社会保险相关内容"
+      }
+    }
+  ],
+  "rejectedGroupRequest": {
+    "decisions": [
+      {
+        "businessReason": "本节整节均为社保停保的条件、操作与记录，用户明确不需要包含社会保险；本节无其他独立职责，不将内容改写成其他主题。",
+        "candidateHandle": "rewrite-candidate:914d6dcadd48c083f4948f8b",
+        "decision": "repair",
+        "expectedChange": "删除本节全部正文（停保条件、停保操作、停保记录表及填报说明），本节不再保留社保停保流程及表格内容。",
+        "preserveFacts": [],
+        "problemFamily": "删除社会保险相关内容"
+      }
+    ],
+    "group_id": "recall-group:cf53a086d75aa77839bc"
+  },
+  "mixedFinalRequest": {
+    "source": "D:\\Project\\bid-agent-sidecar-develop\\runs\\editpro-priority-fixes-20261018\\evidence\\D\\state\\sdk-traces.private.jsonl",
+    "line": 114,
+    "startedAt": "2026-10-18T05:14:47.145586+00:00",
+    "endedAt": "2026-10-18T05:14:47.154198+00:00",
+    "name": "record_rewrite_problem_set",
+    "input": {
+      "problem_set": {
+        "sharedProblem": {
+          "businessProblem": "全文多处将社会保险缴纳责任（参保、停保、补缴、缴费、社保扣款、社保归档、社保岗位）与招聘环节（招聘专员、招聘渠道、紧急发布招聘信息）作为服务承诺和流程内容；用户明确本项目不需要包含社会保险和招聘，并确认连同社保责任与工资扣缴说明一起删除。",
+          "expectedChange": "逐节按已确认改法删除社会保险与招聘相关内容：涉及社保的句子、条项、扣减类别、表格行和社保岗位称谓予以删除或去除；涉及招聘的专员岗位、招聘渠道、紧急发布招聘信息及招聘职责予以删除；同段落中工资发放、个税代扣、住房公积金、商业意外保险、工伤处置、劳动合同、档案管理等独立职责按原文保留；删改后条项序号顺延、语句连贯。",
+          "preserveFacts": [
+            "300名外包员工的服务规模及我方法定用人单位身份",
+            "商业意外保险单人保额不低于80万元，保费按日丰集团规则凭票报销",
+            "工伤后48小时内向佛山市三水区人社部门提交工伤认定申报材料",
+            "人事档案及各类记录保存不少于2年",
+            "离职手续办结后次月15日前完成工资及福利支付",
+            "双人交叉校验、三级审批及盖章留存等原有审核机制"
+          ],
+          "sourceBoundary": "仅依据本节当前正文与用户“不需要包含社会保险、不需要包含招聘，连同社保责任与工资扣缴说明一起删除”的要求改写正文文字；不修改目录结构、源头字段与过程数据，不引入未读取的外部事实。",
+          "confidence": 0.9,
+          "ambiguity": {
+            "ambiguous": false,
+            "reason": "用户已明确删除社会保险及招聘内容，并确认连同社保责任与工资扣缴说明一并删除；各小节保留项按原文独立职责确定。"
+          },
+          "basisRoute": "body_dirty_basis_clean",
+          "minimalRewriteBoundary": "仅删除或改写涉及社会保险、招聘的句段、条项、表格行及岗位称谓，并做必要的序号与条标衔接；其他条款、表格、图片说明和承诺保持原样。",
+          "forbiddenAdditions": [
+            "不得新增社会保险参保、停保、补缴、缴费或社保扣款的承诺和流程",
+            "不得新增招聘、招录或招聘渠道相关职责与岗位",
+            "不得新增原文没有的比例、金额、期限或岗位设置",
+            "不得以社保相关内容替换为其他未在原文出现的业务承诺"
+          ]
+        },
+        "problems": [
+          {
+            "candidateHandle": "rewrite-candidate:914d6dcadd48c083f4948f8b",
+            "businessProblem": "本节整节为社保停保的条件、操作与记录，用户明确不需要包含社会保险，本节无其他独立职责。",
+            "expectedChange": "删除本节全部正文（停保条件、停保操作、停保记录表及表格内容），本节不再保留社保停保流程及相关表格文字。",
+            "preserveFacts": [],
+            "sourceBoundary": "依据本节当前正文与用户删除社会保险内容的要求。",
+            "confidence": 0.92,
+            "ambiguity": {
+              "ambiguous": false,
+              "reason": "整节内容均为社保停保，删除范围明确。"
+            },
+            "basisRoute": "body_dirty_basis_clean",
+            "minimalRewriteBoundary": "仅删除本节全部目标文字，不改动本节以外的其他小节。",
+            "forbiddenAdditions": [
+              "不得新增公积金停缴、参保或其他替代业务流程",
+              "不得新增社保或招聘相关表述"
+            ]
+          },
+          {
+            "candidateHandle": "rewrite-candidate:f8fa7abca0291e03573edee9",
+            "businessProblem": "本节整节为社保参保完整性评估（评估范围、指标、补救措施及核查表），用户明确不需要包含社会保险，本节无其他独立职责。",
+            "expectedChange": "删除本节全部正文（评估范围、评估指标、补救措施、参保核查表及填表说明），本节不再保留社保参保评估内容。",
+            "preserveFacts": [],
+            "sourceBoundary": "依据本节当前正文与用户删除社会保险内容的要求。",
+            "confidence": 0.92,
+            "ambiguity": {
+              "ambiguous": false,
+              "reason": "整节内容均为社保参保评估，删除范围明确。"
+            },
+            "basisRoute": "body_dirty_basis_clean",
+            "minimalRewriteBoundary": "仅删除本节全部目标文字，不改动本节以外的其他小节。",
+            "forbiddenAdditions": [
+              "不得新增公积金缴存评估或其他替代主题内容",
+              "不得新增社保或招聘相关表述"
+            ]
+          }
+        ]
+      }
+    },
+    "output": {
+      "ok": false,
+      "status": "blocking",
+      "blocked": true,
+      "recoverable": true,
+      "reasonCode": "rewrite_problem_review_scope_conflict",
+      "message": "完整 candidateReview 的 repair 集合是唯一目标范围，不能再混入显式 problems 或其他共享范围。",
+      "sharedProblemCount": 1,
+      "explicitProblemCount": 2,
+      "nextRecommendedAction": "已完成的逐节审查就是目标范围：去掉显式 problems，只保留一个省略范围选择字段（不填 candidateHandles/candidateResultSetRef/reviewProblemFamily）的 sharedProblem 共同来源与边界重新提交；程序会逐节承接各节已审改法与保护事实，不要重抄句柄或改法。"
+    }
+  }
+}
