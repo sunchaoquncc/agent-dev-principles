@@ -1,9 +1,0 @@
-{
-  "realPreviouslyRejectedGroupCorrectionAccepted": true,
-  "realPreviouslyRejectedTwoFinalCorrectionsAccepted": true,
-  "repairTargetsRetained": 48,
-  "correctedTargets": 2,
-  "other46ExpectedChangesUnchanged": true,
-  "oldRetargetingNotInCorrectedContracts": true,
-  "scope": "offline original decision replay and contract expansion; no save or model inference"
-}
