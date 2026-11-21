@@ -1,0 +1,12 @@
+{
+  "url": "https://developers.openai.com/cookbook/examples/agent_optimization/optimizing_agents_for_cost_and_quality.md",
+  "final_url": "https://developers.openai.com/cookbook/examples/agent_optimization/optimizing_agents_for_cost_and_quality.md",
+  "status": 200,
+  "content_type": "text/markdown; charset=utf-8",
+  "retrieved_at": "2026-10-13T12:09:04.904194+00:00",
+  "sha256": "8788a0fb2a1bfb67a6b805e32635340f3ca7159d9784c83729714778ed88f324",
+  "bytes": 217631,
+  "content_verified": true,
+  "reviewed_at": "2026-10-13",
+  "review_scope": "Relevant text sections and note claims; not linked reports, code execution, performance or production validation"
+}

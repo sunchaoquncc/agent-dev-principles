@@ -1,0 +1,12 @@
+{
+  "url": "https://developers.openai.com/cookbook/examples/partners/harness_aware_plugin_evals/harness_aware_plugin_evals.md",
+  "final_url": "https://developers.openai.com/cookbook/examples/partners/harness_aware_plugin_evals/harness_aware_plugin_evals.md",
+  "status": 200,
+  "content_type": "text/markdown; charset=utf-8",
+  "retrieved_at": "2026-10-13T12:09:04.221844+00:00",
+  "sha256": "6763893e62b931af668486334344309bbb5eaf8fa4d5af8083d2446f4dc7fba8",
+  "bytes": 39908,
+  "content_verified": true,
+  "reviewed_at": "2026-10-13",
+  "review_scope": "Relevant text sections and note claims; not linked reports, code execution, performance or production validation"
+}

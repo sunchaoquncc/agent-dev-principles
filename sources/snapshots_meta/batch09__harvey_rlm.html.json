@@ -1,0 +1,12 @@
+{
+  "url": "https://www.harvey.ai/blog/post-training-rlm-agents-for-m-and-a-diligence",
+  "final_url": "https://www.harvey.ai/blog/post-training-rlm-agents-for-m-and-a-diligence",
+  "status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "retrieved_at": "2026-10-13T14:08:19.579756+00:00",
+  "sha256": "052302b4259f76d7dce80b0dc3924acd3b4f9229a305a4e64f9bc54620054ad9",
+  "bytes": 374928,
+  "content_verified": true,
+  "reviewed_at": "2026-10-13",
+  "review_scope": "正文与深度附录；未复现、未检查训练工件"
+}

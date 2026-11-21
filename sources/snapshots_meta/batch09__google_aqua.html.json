@@ -1,0 +1,12 @@
+{
+  "url": "https://developers.googleblog.com/the-outer-loop-insights-first-an-ambient-quality-agent-that-diagnoses-your-production-agent/",
+  "final_url": "https://developers.googleblog.com/the-outer-loop-insights-first-an-ambient-quality-agent-that-diagnoses-your-production-agent/",
+  "status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "retrieved_at": "2026-10-13T14:05:43.670001+00:00",
+  "sha256": "ecb315461615133d0e0c03e7b2594ae4d5cdaf6ceaf3997731e448e718fd5df4",
+  "bytes": 72231,
+  "content_verified": true,
+  "reviewed_at": "2026-10-13",
+  "review_scope": "全文机制、旅行示例与限制；未检查链接仓库代码、未运行"
+}

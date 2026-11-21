@@ -1,0 +1,12 @@
+{
+  "url": "https://www.langchain.com/blog/revamping-skills-in-deep-agents",
+  "final_url": "https://www.langchain.com/blog/revamping-skills-in-deep-agents",
+  "status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "retrieved_at": "2026-10-13T14:37:25.278019+00:00",
+  "sha256": "2567c87ceac4b7c1d0583e4954025a42329d5856f9c3206eee087ef1d94adc6c",
+  "bytes": 174168,
+  "content_verified": true,
+  "review_scope": "正文机制和限制；代码图与SDK未运行",
+  "verification_date": "2026-10-13"
+}

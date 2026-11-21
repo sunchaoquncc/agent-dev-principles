@@ -1,0 +1,14 @@
+{
+  "url": "https://developers.openai.com/api/docs/guides/agents/define-agents.md",
+  "final_url": "https://developers.openai.com/api/docs/guides/agents/define-agents.md",
+  "status": 200,
+  "content_type": "text/markdown; charset=utf-8",
+  "retrieved_at": "2026-10-13T13:18:16.843788+00:00",
+  "sha256": "84dd0b9214827e273f50911a5f3925ab8de6d065eda3fdc21aa5a34d4c1e13c9",
+  "bytes": 9762,
+  "content_verified": true,
+  "review_scope": "Prompt organization/examples/versioning OR local/model context boundary only; not full-page or model efficacy review",
+  "reviewed_at": "2026-10-13",
+  "publication_date": null,
+  "substantive_update_date": null
+}

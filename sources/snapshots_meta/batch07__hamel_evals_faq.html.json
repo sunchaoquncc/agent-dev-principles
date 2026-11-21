@@ -1,0 +1,12 @@
+{
+  "url": "https://hamel.dev/blog/posts/evals-faq/index.html",
+  "final_url": "https://hamel.dev/blog/posts/evals-faq/index.html",
+  "status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "retrieved_at": "2026-10-13T12:08:59.274306+00:00",
+  "sha256": "aa9f1934abd1e0de7115e728aef99595c1976343a84539ca5af329ae9af007b8",
+  "bytes": 249295,
+  "content_verified": true,
+  "reviewed_at": "2026-10-13",
+  "review_scope": "Relevant text sections and note claims; not linked reports, code execution, performance or production validation"
+}

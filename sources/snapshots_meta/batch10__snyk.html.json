@@ -1,0 +1,12 @@
+{
+  "url": "https://www.langchain.com/blog/how-snyk-turned-an-internal-support-agent-into-a-customer-feature",
+  "final_url": "https://www.langchain.com/blog/how-snyk-turned-an-internal-support-agent-into-a-customer-feature",
+  "status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "retrieved_at": "2026-10-13T14:37:21.018119+00:00",
+  "sha256": "2e805e1d231a2bd960a6b51fbbe24cd43201d945544fd8126a945431bf96e89b",
+  "bytes": 162652,
+  "content_verified": true,
+  "review_scope": "正文架构、分阶段上线、评估与效果口径；未运行实现",
+  "verification_date": "2026-10-13"
+}

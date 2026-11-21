@@ -1,0 +1,12 @@
+{
+  "url": "https://developers.openai.com/cookbook/examples/agents_sdk/building_reliable_agents_memory_compaction",
+  "final_url": "https://developers.openai.com/cookbook/examples/agents_sdk/building_reliable_agents_memory_compaction",
+  "status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "retrieved_at": "2026-10-13T14:05:37.272375+00:00",
+  "sha256": "ea7b5b27c1cdd7d637a2822fd233e1eca03e60a2130b87e6aaa18d04ac4a8816",
+  "bytes": 494319,
+  "content_verified": true,
+  "reviewed_at": "2026-10-13",
+  "review_scope": "正文与内嵌代码的基线/压缩/记忆/产物部分；未执行notebook"
+}

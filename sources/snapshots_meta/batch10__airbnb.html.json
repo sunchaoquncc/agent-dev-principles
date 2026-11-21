@@ -1,0 +1,12 @@
+{
+  "url": "https://www.latent.space/p/airbnb",
+  "final_url": "https://www.latent.space/p/airbnb",
+  "status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "retrieved_at": "2026-10-13T14:28:36.183586+00:00",
+  "sha256": "b5779af8472b9d84266f3436c66e88ae48830edd41def666d4439334b6711c09",
+  "bytes": 293728,
+  "content_verified": true,
+  "review_scope": "客服、Everest、模型选择段精读；其他筛读，未复核财报和生产数据",
+  "verification_date": "2026-10-13"
+}

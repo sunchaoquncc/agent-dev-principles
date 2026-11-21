@@ -1,0 +1,12 @@
+{
+  "url": "https://arxiv.org/html/2607.07052v1",
+  "final_url": "https://arxiv.org/html/2607.07052v1",
+  "status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "retrieved_at": "2026-10-13T14:05:37.393390+00:00",
+  "sha256": "0805d636e900533132f7952577e7c8f4dd68e99055fd078360fcb4c023e909e1",
+  "bytes": 77153,
+  "content_verified": true,
+  "reviewed_at": "2026-10-13",
+  "review_scope": "全文机制、生产观察和威胁效度；未取得原始生产数据或代码"
+}

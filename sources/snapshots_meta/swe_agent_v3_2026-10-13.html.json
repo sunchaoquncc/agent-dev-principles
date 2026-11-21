@@ -1,0 +1,11 @@
+{
+  "url": "https://arxiv.org/html/2405.15793v3",
+  "final_url": "https://arxiv.org/html/2405.15793v3",
+  "status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "retrieved_at": "2026-10-13T11:39:12.877659+00:00",
+  "sha256": "080002bdc22e8807199a1ebd6b813cb536188614227f776c5eaf0dda6de8e4d3",
+  "bytes": 2556205,
+  "content_verified": true,
+  "verification": "2026-10-13: targeted claims read against web rendering; not a full-document audit."
+}

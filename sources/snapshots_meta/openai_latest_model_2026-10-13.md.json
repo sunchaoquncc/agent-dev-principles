@@ -1,0 +1,11 @@
+{
+  "url": "https://developers.openai.com/api/docs/guides/latest-model.md",
+  "final_url": "https://developers.openai.com/api/docs/guides/latest-model.md",
+  "status": 200,
+  "content_type": "text/markdown; charset=utf-8",
+  "retrieved_at": "2026-10-13T11:39:08.133244+00:00",
+  "sha256": "ad1aeb3d87e2e61a91233447f7c54b7b18ebfecc4315eeefab15bf5861b3a5c7",
+  "bytes": 19325,
+  "content_verified": true,
+  "verification": "2026-10-13: targeted claims read against web rendering; not a full-document audit."
+}

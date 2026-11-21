@@ -1,0 +1,12 @@
+{
+  "url": "https://www.langchain.com/blog/how-to-build-a-model-router-in-the-harness",
+  "final_url": "https://www.langchain.com/blog/how-to-build-a-model-router-in-the-harness",
+  "status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "retrieved_at": "2026-10-13T14:37:21.185544+00:00",
+  "sha256": "6b56c7e4c5f78fa4322907751b1e3e7980b21d77f48bdbc19bca050faa4c36ad",
+  "bytes": 172790,
+  "content_verified": true,
+  "review_scope": "正文方案、两次实验与局限；未复现，图内额外数据未采",
+  "verification_date": "2026-10-13"
+}

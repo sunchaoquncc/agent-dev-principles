@@ -1,0 +1,12 @@
+{
+  "url": "https://www.aisi.gov.uk/blog/building-a-more-secure-environment-for-evaluating-dangerous-capabilities",
+  "final_url": "https://www.aisi.gov.uk/blog/building-a-more-secure-environment-for-evaluating-dangerous-capabilities",
+  "status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "retrieved_at": "2026-10-13T12:09:01.219972+00:00",
+  "sha256": "270f7a2f0ddff8e8c87fd445019938d4532d8fbc6f4f5767295b8d0ca2828a46",
+  "bytes": 34356,
+  "content_verified": true,
+  "reviewed_at": "2026-10-13",
+  "review_scope": "Relevant text sections and note claims; not linked reports, code execution, performance or production validation"
+}

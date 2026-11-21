@@ -1,0 +1,10 @@
+{
+  "url": "https://raw.githubusercontent.com/microsoft/delegate52/b896b804fdd29032f04aacc519c5cfa66e34226d/prompts/domain_fiction_eval.txt",
+  "final_url": "https://raw.githubusercontent.com/microsoft/delegate52/b896b804fdd29032f04aacc519c5cfa66e34226d/prompts/domain_fiction_eval.txt",
+  "status": 200,
+  "content_type": "text/plain; charset=utf-8",
+  "retrieved_at": "2026-10-14T04:45:21.178533+00:00",
+  "sha256": "d0b8fba68c912ddbbd9a3b3e89b3a7dea8584c8e56b640a3ba35113ee90f3ce8",
+  "bytes": 18057,
+  "content_verified": false
+}

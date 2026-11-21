@@ -1,0 +1,12 @@
+{
+  "url": "https://claude.dev/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models/",
+  "final_url": "https://claude.dev/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models/",
+  "status": 200,
+  "content_type": "text/html",
+  "retrieved_at": "2026-10-13T14:06:02.475957+00:00",
+  "sha256": "fa4a8852914649f0eaf4aa6b85b2bf61e0e879641eb5d1655dad902cf8656094",
+  "bytes": 90671,
+  "content_verified": true,
+  "reviewed_at": "2026-10-13",
+  "review_scope": "全文正文；未检查历史提示diff或运行内部评测"
+}

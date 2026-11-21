@@ -1,0 +1,14 @@
+{
+  "url": "https://developers.openai.com/api/docs/guides/prompt-engineering.md",
+  "final_url": "https://developers.openai.com/api/docs/guides/prompt-engineering.md",
+  "status": 200,
+  "content_type": "text/markdown; charset=utf-8",
+  "retrieved_at": "2026-10-13T13:18:08.260606+00:00",
+  "sha256": "3a077358aaa7a23464ccaae32d684467d2972491c5889517ae1a72753e9d1e6d",
+  "bytes": 37414,
+  "content_verified": true,
+  "review_scope": "Prompt organization/examples/versioning OR local/model context boundary only; not full-page or model efficacy review",
+  "reviewed_at": "2026-10-13",
+  "publication_date": null,
+  "substantive_update_date": null
+}

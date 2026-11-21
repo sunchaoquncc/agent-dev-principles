@@ -1,0 +1,11 @@
+{
+  "url": "https://developers.openai.com/api/docs/guides/tools-tool-search.md",
+  "final_url": "https://developers.openai.com/api/docs/guides/tools-tool-search.md",
+  "status": 200,
+  "content_type": "text/markdown; charset=utf-8",
+  "retrieved_at": "2026-10-13T11:39:09.265626+00:00",
+  "sha256": "7a3c8215ee9abd1a9e4cb43c081fe31c4dec12e10de0a728d2dbc3608b3f5462",
+  "bytes": 39341,
+  "content_verified": true,
+  "verification": "2026-10-13: targeted claims read against web rendering; not a full-document audit."
+}

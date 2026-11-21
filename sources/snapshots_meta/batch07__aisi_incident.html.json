@@ -1,0 +1,12 @@
+{
+  "url": "https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing",
+  "final_url": "https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing",
+  "status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "retrieved_at": "2026-10-13T12:09:01.694117+00:00",
+  "sha256": "9eeb7df523c10b6abff3b63cf16a1da6168497ec8a4b1e3d1b4e217c58e0ebeb",
+  "bytes": 41426,
+  "content_verified": true,
+  "reviewed_at": "2026-10-13",
+  "review_scope": "Relevant text sections and note claims; not linked reports, code execution, performance or production validation"
+}

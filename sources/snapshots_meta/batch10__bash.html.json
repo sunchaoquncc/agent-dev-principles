@@ -1,0 +1,12 @@
+{
+  "url": "https://www.philschmid.de/superhuman-bash",
+  "final_url": "https://www.philschmid.de/superhuman-bash",
+  "status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "retrieved_at": "2026-10-13T14:37:23.032194+00:00",
+  "sha256": "45283d9e0b53d0a4e3cf424257d1ab7f5cd9c2d56b26523f4491285e62527627",
+  "bytes": 206482,
+  "content_verified": true,
+  "review_scope": "正文及代码示例；未执行或复现作者任务集",
+  "verification_date": "2026-10-13"
+}

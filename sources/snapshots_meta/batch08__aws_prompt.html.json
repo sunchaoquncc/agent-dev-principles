@@ -1,0 +1,12 @@
+{
+  "url": "https://aws.amazon.com/blogs/machine-learning/optimizing-agent-system-prompts-with-amazon-bedrock-agentcore/",
+  "final_url": "https://aws.amazon.com/blogs/machine-learning/optimizing-agent-system-prompts-with-amazon-bedrock-agentcore/",
+  "status": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "retrieved_at": "2026-10-13T13:44:22.865874+00:00",
+  "sha256": "50e76dd644fda51dde3023916991ea3dc2b198026ce8647d70c36cff923db102",
+  "bytes": 1310676,
+  "content_verified": true,
+  "reviewed_at": "2026-10-13",
+  "review_scope": "正文中本笔记的机制/结果/方法/局限；未复现，链接工件检查范围见笔记"
+}
